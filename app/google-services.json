@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "528717690865",
+    "firebase_url": "https://appbuild-a0725.firebaseio.com",
+    "project_id": "appbuild-a0725",
+    "storage_bucket": "appbuild-a0725.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528717690865:android:79fc9cb9378238bf",
+        "android_client_info": {
+          "package_name": "com.example.pairumani.appbuild"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528717690865-im8i3ta3e7alen8p1ascgs3rlsju91su.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pairumani.appbuild",
+            "certificate_hash": "c1d4a917e77b6aebf284ef0ad9ed4f4feda76cd1"
+          }
+        },
+        {
+          "client_id": "528717690865-3nd9cv8464k3jg00g4iqbj4bqf46qarc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pairumani.appbuild",
+            "certificate_hash": "08db702ccfd051cb66209fc7e9fa73f41a0543d2"
+          }
+        },
+        {
+          "client_id": "528717690865-7fjp0t3f6a5slkboosiuf8vim3oelbjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZAE26Dk1wB_M5zsAapT31_qMC7_QKz4k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528717690865-7fjp0t3f6a5slkboosiuf8vim3oelbjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

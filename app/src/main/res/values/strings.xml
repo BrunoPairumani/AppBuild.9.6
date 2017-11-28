@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AppBuild</string>
+
+
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+
+
+    <string name="facebook_app_id">251260578735052</string>
+    <string name="fb_login_protocol_scheme">fb251260578735052</string>
+
+    <string name="welcome">Bienvenido</string>
+    <string name="cancel_login">Se canceló la operación</string>
+    <string name="error_login">Ocurrió un error al ingresar</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="not_log_in">No se pudo iniciar sesión</string>
+    <string name="log_out">Log Out</string>
+    <string name="revoke">Revoke</string>
+    <string name="not_close_session">No se pudo cerrar sesión</string>
+    <string name="not_revoke">No se pudo revocar el acceso</string>
+    <string name="not_firebase_auth">No se pudo autenticar con Firebase</string>
+
+</resources>
