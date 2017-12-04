@@ -3,12 +3,15 @@ package com.example.pairumani.appbuild;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
 import com.facebook.login.LoginManager;
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     private ImageView photoImageView;
     private TextView nameTextView;
     private TextView emailTextView;
-    private TextView idTextView;
+
 
     private GoogleApiClient googleApiClient;
 
@@ -48,10 +51,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
         photoImageView = (ImageView) findViewById(R.id.photoImageView);
         nameTextView = (TextView) findViewById(R.id.nameTextView);
         emailTextView = (TextView) findViewById(R.id.emailTextView);
-        idTextView = (TextView) findViewById(R.id.idTextView);
+     //   idTextView = (TextView) findViewById(R.id.idTextView);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -83,11 +87,14 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
     }
 
+    private void setSupportActionBar(Toolbar toolbar) {
+    }
+
     private void setUserData(FirebaseUser user) {
 
         nameTextView.setText(user.getDisplayName());
         emailTextView.setText(user.getEmail());
-        idTextView.setText(user.getUid());
+       // idTextView.setText(user.getUid());
 
         Glide.with(this).load(user.getPhotoUrl()).into(photoImageView);
 
@@ -171,4 +178,14 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
         startActivity(intent);
     }
+
+
+    public void Mposteria(View view) {
+
+
+        Intent intent = new Intent(this, MamposteriaActivity.class);
+
+        startActivity(intent);
+    }
+
 }
