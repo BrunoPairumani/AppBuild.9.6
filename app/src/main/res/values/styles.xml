@@ -24,4 +24,10 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="RadioButtonStyle" parent="AppTheme">
+        <item name="colorControlNormal">#ff0000</item>
+        <item name="colorAccent">#ffff00</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
 </resources>

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondoc"
 
+
     tools:context="com.example.pairumani.appbuild.HomeActivity">
 <RelativeLayout
     android:layout_width="match_parent"
