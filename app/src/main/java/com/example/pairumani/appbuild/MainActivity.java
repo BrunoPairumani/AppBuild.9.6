@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         photoImageView = (ImageView) findViewById(R.id.photoImageView);
         nameTextView = (TextView) findViewById(R.id.nameTextView);
@@ -89,6 +90,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         idTextView.setText(user.getUid());
 
         Glide.with(this).load(user.getPhotoUrl()).into(photoImageView);
+
+
     }
 
     @Override

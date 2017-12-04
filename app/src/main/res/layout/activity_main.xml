@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context="com.example.pairumani.appbuild.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+       >
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
