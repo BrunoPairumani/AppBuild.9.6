@@ -24,6 +24,19 @@ public class HomeActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+    public void Losa(View view) {
 
+
+        Intent intent = new Intent(this, LosaActivity.class);
+
+        startActivity(intent);
+    }
+    public void Radier(View view) {
+
+
+        Intent intent = new Intent(this, RadierActivity.class);
+
+        startActivity(intent);
+    }
 
 }
