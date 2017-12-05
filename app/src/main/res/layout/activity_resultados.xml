@@ -55,258 +55,304 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:layout_marginLeft="5dp">
-<RelativeLayout
-    android:layout_marginTop="0dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white">
+<TableLayout
 
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:stretchColumns="*">
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
     <TextView
-       android:layout_width="wrap_content"
-       android:layout_marginLeft="30dp"
-       android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
 
        
        android:textStyle=""
        android:text="Material" android:textColor="@color/black"/>
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="170dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:backgroundTint="@color/black"
         android:text="Medida" android:textColor="@color/black"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="300dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Cantidad" android:textColor="@color/black"/>
-
+    </TableRow>
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="2dp"
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="2dp"
     android:background="@color/black"
     android:orientation="horizontal"></LinearLayout>
-
+<TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
     <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Ladrillos"
         android:textColor="@color/black"
-        android:layout_marginTop="40dp"/>
-
-    <TextView
-        android:id="@+id/tvMLadrillo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="270dp"
-        android:text="Cantidad"
-        android:textColor="@color/black"
-        android:layout_marginTop="40dp"/>
+        />
     <TextView
         android:id="@+id/tvCLadrillo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Medida"
         android:textColor="@color/black"
-        android:layout_marginTop="40dp"/>
+        />
+    <TextView
+        android:id="@+id/tvMLadrillo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="Cantidad"
+        android:textColor="@color/black"
+       />
+
+</TableRow>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="2dp"
         android:background="@color/cardview_dark_background"
         android:orientation="horizontal"></LinearLayout>
 
-
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
     <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Cementos"
         android:textColor="@color/black"
-        android:layout_marginTop="80dp"/>
+      />
 
     <TextView
         android:id="@+id/tvCCemento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="270dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Cantidad"
         android:textColor="@color/black"
-        android:layout_marginTop="80dp"/>
+       />
     <TextView
         android:id="@+id/tvMCemento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Medida"
         android:textColor="@color/black"
-        android:layout_marginTop="80dp"/>
+    />
+    </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="102dp"
+        android:layout_marginTop="2dp"
         android:background="@color/cardview_dark_background"
         android:orientation="horizontal"></LinearLayout>
 
-
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
 
     <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Mortero"
         android:textColor="@color/black"
-        android:layout_marginTop="120dp"/>
+        />
 
     <TextView
         android:id="@+id/tvMmortero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="270dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Cantidad"
         android:textColor="@color/black"
-        android:layout_marginTop="120dp"/>
+        />
     <TextView
         android:id="@+id/tvCmortero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Medida"
         android:textColor="@color/black"
-        android:layout_marginTop="120dp"/>
+  />
+    </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="142dp"
+        android:layout_marginTop="2dp"
         android:background="@color/cardview_dark_background"
         android:orientation="horizontal"></LinearLayout>
 
 
-
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
 
     <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Arena"
         android:textColor="@color/black"
-        android:layout_marginTop="160dp"/>
+        />
 
     <TextView
         android:id="@+id/tvMfino"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="270dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Cantidad"
         android:textColor="@color/black"
-        android:layout_marginTop="160dp"/>
+        />
     <TextView
         android:id="@+id/tvCfino"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Medida"
         android:textColor="@color/black"
-        android:layout_marginTop="160dp"/>
+        />
+    </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="183dp"
+        android:layout_marginTop="2dp"
         android:background="@color/cardview_dark_background"
         android:orientation="horizontal"></LinearLayout>
 
 
-
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
     <TextView
-     
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-       android:gravity="center"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Muro a Repellar"
+        android:layout_span="3"
         android:textColor="@color/black"
-        android:layout_marginTop="200dp"/>
+
+      />
+    </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginTop="219dp"
+        android:layout_marginTop="2dp"
         android:background="@color/cardview_dark_background"
         android:orientation="horizontal"></LinearLayout>
 
-
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
 
     <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Cemento"
         android:textColor="@color/black"
-        android:layout_marginTop="240dp"/>
+        />
 
     <TextView
         android:id="@+id/tvMppc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="270dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Cantidad"
         android:textColor="@color/black"
-        android:layout_marginTop="240dp"/>
+      />
     <TextView
         android:id="@+id/tvCppc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Medida"
         android:textColor="@color/black"
-        android:layout_marginTop="240dp"/>
+      />
+    </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="263dp"
+        android:layout_marginTop="2dp"
         android:background="@color/cardview_dark_background"
         android:orientation="horizontal"></LinearLayout>
-
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
     <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Arena"
         android:textColor="@color/black"
-        android:layout_marginTop="280dp"/>
+        />
 
     <TextView
         android:id="@+id/tvMppf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="270dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Cantidad"
         android:textColor="@color/black"
-        android:layout_marginTop="280dp"/>
+        />
     <TextView
         android:id="@+id/tvCppf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:gravity="center"
         android:text="Medida"
         android:textColor="@color/black"
-        android:layout_marginTop="280dp"/>
+      />
+    </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="305dp"
+        android:layout_marginTop="2dp"
         android:background="@color/cardview_dark_background"
         android:orientation="horizontal"></LinearLayout>
-</RelativeLayout>
+</TableLayout>
 </ScrollView>
 <RelativeLayout
     android:layout_width="match_parent"

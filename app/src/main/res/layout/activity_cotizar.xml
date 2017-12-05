@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondoc"
-
-    tools:context="com.example.pairumani.appbuild.ResultadoLosaActivity">
+    tools:context="com.example.pairumani.appbuild.CotizarActivity">
 
     <RelativeLayout
         android:layout_marginTop="0dp"
@@ -56,7 +55,7 @@
         android:layout_marginLeft="5dp"
         android:id="@+id/scrollView2">
         <TableLayout
-            android:layout_marginTop="0dp"
+
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:background="@color/white"
@@ -67,28 +66,28 @@
             <TableRow
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent">
-                <TextView
-                    android:layout_width="fill_parent"
+            <TextView
+                android:layout_width="fill_parent"
 
-                    android:layout_height="fill_parent"
-                    android:padding="20dp"
-                    android:text="Material"
-                    android:gravity="center"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:padding="20dp"
-                    android:gravity="center"
-                    android:text="Medida" android:textColor="@color/black"/>
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                 android:text="Material"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                android:gravity="center"
+                android:text="Medida" android:textColor="@color/black"/>
 
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:padding="20dp"
-                    android:text="Cantidad"
-                    android:gravity="center"
-                    android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                android:text="Cantidad"
+                android:gravity="center"
+                android:textColor="@color/black"/>
 
             </TableRow>
 
@@ -104,26 +103,26 @@
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent">
 
-                <TextView
+            <TextView
 
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:padding="20dp"
-                    android:gravity="center"
-                    android:text="Cemento"
-                    android:textColor="@color/black"
-                    />
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                android:gravity="center"
+                android:text="Cemento"
+                android:textColor="@color/black"
+                />
 
 
-                <TextView
-                    android:id="@+id/tvMCemento"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:padding="20dp"
-                    android:gravity="center"
-                    android:text="Medida"
-                    android:textColor="@color/black"
-                    />
+            <TextView
+                android:id="@+id/tvMCemento"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                android:gravity="center"
+                android:text="Medida"
+                android:textColor="@color/black"
+                />
                 <TextView
                     android:id="@+id/tvCCemento"
                     android:layout_width="fill_parent"
@@ -141,37 +140,37 @@
                 android:background="@color/cardview_dark_background"
                 android:orientation="horizontal"></LinearLayout>
 
-            <TableRow
-                android:layout_height="wrap_content"
-                android:layout_width="fill_parent">
-                <TextView
+<TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+            <TextView
 
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:padding="20dp"
-                    android:gravity="center"
-                    android:text="Arena"
-                    android:textColor="@color/black"
-                    />
-                <TextView
-                    android:id="@+id/tvMarena"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:padding="20dp"
-                    android:layout_gravity="center"
-                    android:text="Medida"
-                    android:textColor="@color/black"
-                    />
-                <TextView
-                    android:id="@+id/tvCarena"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:padding="20dp"
-                    android:gravity="center"
-                    android:text="Cantidad"
-                    android:textColor="@color/black"
-                    />
-            </TableRow>
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                android:gravity="center"
+                android:text="Arena"
+                android:textColor="@color/black"
+               />
+            <TextView
+                android:id="@+id/tvMarena"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:text="Medida"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tvCarena"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                android:gravity="center"
+                android:text="Cantidad"
+                android:textColor="@color/black"
+                />
+</TableRow>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -183,15 +182,15 @@
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent">
 
-                <TextView
+            <TextView
 
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:padding="20dp"
-                    android:gravity="center"
-                    android:text="Grava"
-                    android:textColor="@color/black"
-                    />
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                android:gravity="center"
+                android:text="Grava"
+                android:textColor="@color/black"
+                />
                 <TextView
                     android:id="@+id/tvMgrava"
                     android:layout_width="fill_parent"
@@ -201,15 +200,15 @@
                     android:text="Medida"
                     android:textColor="@color/black"
                     />
-                <TextView
-                    android:id="@+id/tvCgrava"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:padding="20dp"
-                    android:gravity="center"
-                    android:text="Cantidad"
-                    android:textColor="@color/black"
-                    />
+            <TextView
+                android:id="@+id/tvCgrava"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                android:gravity="center"
+                android:text="Cantidad"
+                android:textColor="@color/black"
+              />
 
             </TableRow>
             <LinearLayout
@@ -260,7 +259,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="330dp"> <TextView
+        android:layout_marginTop="330dp"
+        android:id="@+id/relativeLayout"> <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cemento: Bolsas 42.5 Kg"

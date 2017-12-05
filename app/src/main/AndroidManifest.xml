@@ -42,7 +42,8 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".ResultadoLosaActivity" />
         <activity android:name=".RadierActivity" />
-        <activity android:name=".ResultadoRadierActivity"></activity>
+        <activity android:name=".ResultadoRadierActivity" />
+        <activity android:name=".CotizarActivity"></activity>
     </application>
 
 </manifest>
