@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoc"
+    android:background="@drawable/fondox"
 
     tools:context="com.example.pairumani.appbuild.ResultadoLosaActivity">
 
@@ -23,8 +23,8 @@
             android:text="Resultados de Losa"
             android:textAlignment="center"
 
-            android:textColor="@color/white"
-            android:textSize="26dp"
+            android:textColor="@color/black"
+            android:textSize="30dp"
             android:textStyle="bold"
             android:id="@+id/textView"></TextView>
 
@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cálculo para cubrir "
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_marginTop="100dp"
             android:gravity="center"
             android:textSize="16dp"/>
@@ -44,7 +44,7 @@
             android:gravity="center"
             android:id="@+id/tvDatos"
             android:text="ddd"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="16dp"/>
 
     </RelativeLayout>
@@ -53,7 +53,7 @@
         android:layout_marginTop="160dp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="0dp"
         android:id="@+id/scrollView2">
         <HorizontalScrollView
 
@@ -320,7 +320,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cemento: Bolsas 42.5 Kg, Arena 25kg, Grava 25  Kg. "
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:textSize="16dp"/>

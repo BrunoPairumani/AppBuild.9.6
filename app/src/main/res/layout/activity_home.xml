@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoc"
+    android:background="@drawable/fondox"
 
 
     tools:context="com.example.pairumani.appbuild.HomeActivity">
@@ -27,8 +27,8 @@
         android:text="Bienvenidos"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
         android:textStyle="bold" ></TextView>
 
 

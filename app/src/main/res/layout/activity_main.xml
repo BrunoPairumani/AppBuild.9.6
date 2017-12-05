@@ -91,7 +91,9 @@ android:gravity="center"
 
 
 
-<include layout="@layout/activity_home">
+<include
+
+    layout="@layout/activity_home">
 
 </include>
 
