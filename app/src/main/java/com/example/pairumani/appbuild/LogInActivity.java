@@ -290,7 +290,7 @@ public int x;
 
     public void nexthome(View view) {
 
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
 
         startActivity(intent);
     }
