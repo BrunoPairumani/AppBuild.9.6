@@ -263,7 +263,7 @@
         android:id="@+id/relativeLayout"> <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cemento: Bolsas 42.5 Kg"
+        android:text="Cemento: Bolsas 42.5 Kg, Arena: 25kg"
         android:textColor="@color/white"
         android:layout_marginTop="30dp"
         android:gravity="center"

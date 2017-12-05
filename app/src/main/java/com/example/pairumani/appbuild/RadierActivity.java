@@ -15,7 +15,7 @@ public class RadierActivity extends AppCompatActivity {
     public double AgrFino, AgrFinoTd;
     public double agua, aguaTd;
 
-
+    public double Pcemento, Parena, Pagua, Pgrava, Pcemento2, Parena2, Pladrillo;
     EditText Mespesor1, Mancho1, Mlargo1;
     Button Calcular1;
 
@@ -106,6 +106,14 @@ public class RadierActivity extends AppCompatActivity {
                         Totalgrava = CmorteroTd / 1000; // GRAVA
                         Totalagua = aguaTd / 1000;  // AGUA M^3
 
+                        Pcemento = 7500 * Totalbolsa;
+
+                        Parena = 48450 * Totalarena;
+
+
+                        Parena2 = 48450 * Totalgrava; // Grava
+
+                        Pagua = 3042 * Totalagua;
 
                         Intent i = new Intent(this, ResultadoRadierActivity.class);
 
@@ -118,6 +126,12 @@ public class RadierActivity extends AppCompatActivity {
                         i.putExtra("dato07", String.format("%.2f", Totalgrava));
                         i.putExtra("dato08", String.format("%.2f", aguaTd));
                         i.putExtra("dato09", String.format("%.2f", Totalagua));
+
+                        i.putExtra("dato10", String.format("%.2f", Pcemento));
+                        i.putExtra("dato11", String.format("%.2f", Pagua));
+                        i.putExtra("dato12", String.format("%.2f", Parena));
+                        i.putExtra("dato13", String.format("%.2f", Parena2)); // GRAVA
+
                         startActivity(i);
                     }
                 }

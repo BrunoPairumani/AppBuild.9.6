@@ -19,7 +19,7 @@ public class LosaActivity extends AppCompatActivity {
     public double Cemento, CementoTd,  Totalarena, Totalagua, Totalbolsa, Totalgrava;  // CEMENTO
     public double AgrFino, AgrFinoTd;
     public double agua, aguaTd;
-
+    public double Pcemento, Parena, Pagua, Pgrava, Pcemento2, Parena2, Pladrillo;
 
 
     EditText Mespesor1, Mancho1, Mlargo1;
@@ -108,11 +108,22 @@ try{
                     agua = 136 * area;
                     aguaTd = agua + (agua * (v4 / 100));
 
+
+
                     Totalbolsa = CementoTd / 42.5;  // BOLSA DE CEMENTO
                     Totalarena = AgrFinoTd / 1000;  // ARENA
                     Totalgrava = CmorteroTd / 1000; // GRAVA
                     Totalagua = aguaTd / 1000;  // AGUA M^3
 
+
+                    Pcemento = 7500 * Totalbolsa;
+
+                    Parena = 48450 * Totalarena;
+
+
+                    Parena2 = 48450 * Totalgrava; // Grava
+
+                    Pagua = 3042 * Totalagua;
 
                     Intent i = new Intent(this, ResultadoLosaActivity.class);
 
@@ -125,6 +136,13 @@ try{
                     i.putExtra("dato07", String.format("%.2f", Totalgrava));
                     i.putExtra("dato08", String.format("%.2f", aguaTd));
                     i.putExtra("dato09", String.format("%.2f", Totalagua));
+
+                    i.putExtra("dato10", String.format("%.2f", Pcemento));
+                    i.putExtra("dato11", String.format("%.2f", Pagua));
+                    i.putExtra("dato12", String.format("%.2f", Parena));
+                    i.putExtra("dato13", String.format("%.2f", Parena2)); // GRAVA
+
+
                     startActivity(i);
                 }
             }

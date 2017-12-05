@@ -55,6 +55,12 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:layout_marginLeft="5dp">
+
+
+    <HorizontalScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 <TableLayout
 
     android:layout_width="wrap_content"
@@ -63,10 +69,10 @@
     android:padding="20dp"
     android:stretchColumns="*">
     <TableRow
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_width="fill_parent">
     <TextView
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:padding="20dp"
         android:gravity="center"
@@ -75,7 +81,7 @@
        android:textStyle=""
        android:text="Material" android:textColor="@color/black"/>
     <TextView
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:padding="20dp"
         android:gravity="center"
@@ -83,11 +89,22 @@
         android:text="Medida" android:textColor="@color/black"/>
 
     <TextView
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:padding="20dp"
         android:gravity="center"
         android:text="Cantidad" android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:gravity="center"
+            android:backgroundTint="@color/black"
+            android:text="Precio" android:textColor="@color/black"
+            />
+
+
     </TableRow>
 
 <LinearLayout
@@ -126,7 +143,14 @@
         android:text="Cantidad"
         android:textColor="@color/black"
        />
-
+    <TextView
+        android:id="@+id/Pladrillo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:text="Cantidad"
+        android:gravity="center"
+        android:textColor="@color/black"/>
 </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
@@ -166,6 +190,14 @@
         android:text="Medida"
         android:textColor="@color/black"
     />
+        <TextView
+            android:id="@+id/Pcemento"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="Cantidad"
+            android:gravity="center"
+            android:textColor="@color/black"/>
     </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
@@ -205,7 +237,10 @@
         android:gravity="center"
         android:text="Medida"
         android:textColor="@color/black"
+
   />
+
+
     </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
@@ -247,6 +282,14 @@
         android:text="Medida"
         android:textColor="@color/black"
         />
+        <TextView
+            android:id="@+id/Parena"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="Cantidad"
+            android:gravity="center"
+            android:textColor="@color/black"/>
     </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
@@ -265,7 +308,7 @@
         android:padding="20dp"
         android:gravity="center"
         android:text="Muro a Repellar"
-        android:layout_span="3"
+        android:layout_span="4"
         android:textColor="@color/black"
 
       />
@@ -308,6 +351,14 @@
         android:text="Medida"
         android:textColor="@color/black"
       />
+        <TextView
+            android:id="@+id/Pcemento2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="Cantidad"
+            android:gravity="center"
+            android:textColor="@color/black"/>
     </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
@@ -345,6 +396,15 @@
         android:text="Medida"
         android:textColor="@color/black"
       />
+
+        <TextView
+            android:id="@+id/Parena2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="Cantidad"
+            android:gravity="center"
+            android:textColor="@color/black"/>
     </TableRow>
     <LinearLayout
         android:layout_width="match_parent"
@@ -353,6 +413,7 @@
         android:background="@color/cardview_dark_background"
         android:orientation="horizontal"></LinearLayout>
 </TableLayout>
+    </HorizontalScrollView>
 </ScrollView>
 <RelativeLayout
     android:layout_width="match_parent"
@@ -362,7 +423,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cemento: Bolsas 42.5 Kg"
+        android:text="Cemento: Bolsas 42.5 Kg, Arena 25kg, Grava 25  Kg. "
         android:textColor="@color/white"
         android:layout_marginTop="35dp"
         android:gravity="center"
@@ -377,9 +438,9 @@
         android:layout_marginTop="103dp"
         android:background="@android:color/holo_orange_light"
         android:gravity="center"
-        android:text="Cotizar"
-        android:onClick="Cotizar"
-        android:id="@+id/Cotizar" />
+        android:text="Home"
+        android:onClick="Home2"
+        android:id="@+id/Home" />
 
 </RelativeLayout>
 

@@ -18,6 +18,7 @@ public class MamposteriaActivity extends AppCompatActivity {
     public double Cemento, CementoTd, TotalCemento, Totalpc, Totalpf, Totalbolsa, Totalbolsap;  // CEMENTO
     public double AgrFino, AgrFinoTd, TotalAgrFino;
     public double pcemento, pfino;
+    public double Pcemento, Parena, Pagua, Pgrava, Pcemento2, Parena2, Pladrillo;
 
     EditText Maltura1, Manchura1, Mlargo1, desperdicio;
     Button Calcular1;
@@ -494,12 +495,23 @@ public class MamposteriaActivity extends AppCompatActivity {
                         }
                     }
                 }
+                 try {
+                     Totalbolsa = TotalCemento / 42.5;
+                     Totalbolsap = Totalpc / 42.5;
+                     Pcemento = 7500 * Totalbolsa;
+                     Pcemento2 = 7500 * Totalbolsap;
+                     Pladrillo = 490 * CareaL;
+                     Parena = 48450 * TotalAgrFino;
+                     Parena2 = 48450 * Totalpf;
 
-                Totalbolsa = TotalCemento / 50;
-                Totalbolsap = Totalpc / 50;
+                 }
+                 catch (Exception e)
+                 {
+                     Toast.makeText(getApplicationContext(), "Parámetros Inválidos, Ingresar Números", Toast.LENGTH_SHORT).show();
+                 }
                 Intent i = new Intent(this, ResultadosActivity.class);
                 i.putExtra("dato01", String.format("%.2f", area));
-                i.putExtra("dato02", String.format("%.2f", CareaL));
+                i.putExtra("dato02", String.format("%.0f", CareaL));
                 i.putExtra("dato03", String.format("%.2f", TotalCemento));
                 i.putExtra("dato04", String.format("%.2f", Totalbolsa));
                 i.putExtra("dato05", String.format("%.2f", TotalMortero));
@@ -507,6 +519,13 @@ public class MamposteriaActivity extends AppCompatActivity {
                 i.putExtra("dato07", String.format("%.2f", Totalpc));
                 i.putExtra("dato08", String.format("%.2f", Totalbolsap));
                 i.putExtra("dato09", String.format("%.2f", Totalpf));
+
+                i.putExtra("dato10", String.format("%.2f", Pcemento));
+                i.putExtra("dato11", String.format("%.2f", Pcemento2));
+                i.putExtra("dato12", String.format("%.2f", Parena));
+                i.putExtra("dato13", String.format("%.2f", Parena2));
+                i.putExtra("dato14", String.format("%.2f", Pladrillo));
+
                 startActivity(i);
 
             }

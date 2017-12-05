@@ -1,8 +1,10 @@
 package com.example.pairumani.appbuild;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class ResultadosActivity extends AppCompatActivity {
@@ -14,6 +16,7 @@ public class ResultadosActivity extends AppCompatActivity {
     TextView tvMfino, tvCfino;
     TextView tvMppc, tvCppc;
     TextView tvMppf, tvCppf;
+    TextView Pcemento, Pladrillo, Parena, Pcemento2, Parena2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,12 @@ public class ResultadosActivity extends AppCompatActivity {
         String d7 = extras.getString("dato07");
         String d8 = extras.getString("dato08");
         String d9 = extras.getString("dato09");
+        String d10 = extras.getString("dato10");
+        String d11 = extras.getString("dato11");
+        String d12= extras.getString("dato12");
+        String d13 = extras.getString("dato13");
+        String d14 = extras.getString("dato14");
+
         tvDatos = (TextView) findViewById(R.id.tvDatos);
         tvCLadrillo = (TextView) findViewById(R.id.tvCLadrillo);
         tvMLadrillo = (TextView) findViewById(R.id.tvMLadrillo);
@@ -42,10 +51,10 @@ public class ResultadosActivity extends AppCompatActivity {
         tvMLadrillo.setText(d2 + " (Un.)");
 
         tvMCemento = (TextView) findViewById(R.id.tvMCemento);
-        tvMCemento.setText(d3+" (Kg.)");
+        tvMCemento.setText(d4+" (Bolsas.)");
 
         tvCCemento = (TextView) findViewById(R.id.tvCCemento);
-        tvCCemento.setText(d4+" (Bolsas)");
+        tvCCemento.setText(d3+" (Kg.)");
 
         tvMfino = (TextView) findViewById(R.id.tvMfino);
         tvCfino = (TextView) findViewById(R.id.tvCfino);
@@ -59,8 +68,8 @@ public class ResultadosActivity extends AppCompatActivity {
 
         tvMppc = (TextView) findViewById(R.id.tvMppc);
         tvCppc = (TextView) findViewById(R.id.tvCppc);
-        tvMppc.setText(d8+" (Bolsas.)");
-        tvCppc.setText(d7+ " (kg.)");
+        tvMppc.setText(d7+" (Kg.)");
+        tvCppc.setText(d8+ " (Bolsas.)");
 
         tvMppf = (TextView) findViewById(R.id.tvMppf);
         tvCppf = (TextView) findViewById(R.id.tvCppf);
@@ -69,6 +78,29 @@ public class ResultadosActivity extends AppCompatActivity {
 
         tvDatos.setText(d1+ " metros cuadrados");
 
+        Pcemento = (TextView) findViewById(R.id.Pcemento);
+        Pcemento.setText("$ " + d10 );
 
+        Pcemento2 = (TextView) findViewById(R.id.Pcemento2);
+        Pcemento2.setText("$ " + d11 );
+
+
+        Parena = (TextView) findViewById(R.id.Parena);
+        Parena.setText("$ " + d12 );
+
+        Parena2 = (TextView) findViewById(R.id.Parena2);
+        Parena2.setText("$ " + d13 );
+
+        Pladrillo= (TextView) findViewById(R.id.Pladrillo);
+        Pladrillo.setText("$ " + d14 );
+
+
+
+
+
+    }
+    public void Home2(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

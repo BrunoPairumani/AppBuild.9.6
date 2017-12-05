@@ -55,9 +55,14 @@
         android:layout_height="200dp"
         android:layout_marginLeft="5dp"
         android:id="@+id/scrollView2">
-        <TableLayout
-            android:layout_marginTop="0dp"
+        <HorizontalScrollView
+
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+        <TableLayout
+
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:background="@color/white"
             android:padding="20dp"
@@ -65,8 +70,9 @@
 
             >
             <TableRow
+
                 android:layout_height="wrap_content"
-                android:layout_width="fill_parent">
+                android:layout_width="match_parent">
                 <TextView
                     android:layout_width="fill_parent"
 
@@ -87,6 +93,14 @@
                     android:layout_height="fill_parent"
                     android:padding="20dp"
                     android:text="Cantidad"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="20dp"
+                    android:text="Precio"
                     android:gravity="center"
                     android:textColor="@color/black"/>
 
@@ -133,6 +147,14 @@
                     android:text="Cantidad"
                     android:textColor="@color/black"
                     />
+                <TextView
+                    android:id="@+id/Pcemento"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="20dp"
+                    android:text="Cantidad"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
             </TableRow>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -171,6 +193,14 @@
                     android:text="Cantidad"
                     android:textColor="@color/black"
                     />
+                <TextView
+                    android:id="@+id/Parena"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="20dp"
+                    android:text="Cantidad"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
             </TableRow>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -210,6 +240,14 @@
                     android:text="Cantidad"
                     android:textColor="@color/black"
                     />
+                <TextView
+                    android:id="@+id/Pgrava"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="20dp"
+                    android:text="Cantidad"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
 
             </TableRow>
             <LinearLayout
@@ -220,33 +258,50 @@
                 android:orientation="horizontal"></LinearLayout>
 
 
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
 
 
             <TextView
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
                 android:text="Agua"
+                android:gravity="center"
                 android:textColor="@color/black"
-                android:layout_marginTop="160dp"/>
+                />
 
             <TextView
                 android:id="@+id/tvCagua"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="270dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                android:gravity="center"
                 android:text="Cantidad"
                 android:textColor="@color/black"
-                android:layout_marginTop="160dp"/>
+              />
             <TextView
                 android:id="@+id/tvMagua"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="150dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
                 android:text="Medida"
+                android:gravity="center"
                 android:textColor="@color/black"
-                android:layout_marginTop="160dp"/>
+              />
+
+                <TextView
+                    android:id="@+id/Pagua"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="20dp"
+                    android:text="Cantidad"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -256,6 +311,7 @@
 
 
         </TableLayout>
+        </HorizontalScrollView>
     </ScrollView>
 
     <RelativeLayout
@@ -265,7 +321,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cemento: Bolsas 42.5 Kg"
+            android:text="Cemento: Bolsas 42.5 Kg, Arena 25kg, Grava 25  Kg. "
             android:textColor="@color/white"
             android:layout_marginTop="30dp"
             android:gravity="center"
@@ -280,9 +336,9 @@
             android:layout_marginTop="103dp"
             android:background="@android:color/holo_orange_light"
             android:gravity="center"
-            android:text="Cotizar"
-            android:onClick="Cotizar"
-            android:id="@+id/Cotizar" />
+            android:text="Home"
+            android:onClick="Home2"
+            android:id="@+id/Home" />
 
     </RelativeLayout>
 
