@@ -187,5 +187,18 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
         startActivity(intent);
     }
+    public void Losa(View view) {
 
+
+        Intent intent = new Intent(this, LosaActivity.class);
+
+        startActivity(intent);
+    }
+    public void Radier(View view) {
+
+
+        Intent intent = new Intent(this, MamposteriaActivity.class);
+
+        startActivity(intent);
+    }
 }

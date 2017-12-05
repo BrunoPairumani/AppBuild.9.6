@@ -26,15 +26,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LogInActivity"      android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-
-
-        </activity>
-        <activity android:name=".HomeActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".LogInActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".ActivityFacebookUser" />
-        <activity android:name=".MamposteriaActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".ResultadosActivity"></activity>
+        <activity
+            android:name=".MamposteriaActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ResultadosActivity" />
+        <activity android:name=".LosaActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".ResultadoLosaActivity"></activity>
     </application>
 
 </manifest>

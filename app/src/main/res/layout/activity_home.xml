@@ -47,11 +47,39 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
 
-            android:layout_marginTop="103dp"
+            android:layout_marginTop="100dp"
             android:background="@android:color/holo_orange_light"
             android:gravity="center"
             android:text="Mampostería"
             android:onClick="Mposteria"/>
+
+
+        <Button
+            android:layout_width="350dp"
+
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="180dp"
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:text="Losa"
+            android:onClick="Losa"/>
+
+
+        <Button
+            android:layout_width="350dp"
+
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="260dp"
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:text="Radier"
+            android:onClick="Radier"/>
     </RelativeLayout>
 
 
