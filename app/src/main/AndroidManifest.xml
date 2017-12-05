@@ -37,9 +37,12 @@
             android:name=".MamposteriaActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".ResultadosActivity" />
-        <activity android:name=".LosaActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".ResultadoLosaActivity"></activity>
+        <activity
+            android:name=".LosaActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ResultadoLosaActivity" />
+        <activity android:name=".RadierActivity" />
+        <activity android:name=".ResultadoRadierActivity"></activity>
     </application>
 
 </manifest>

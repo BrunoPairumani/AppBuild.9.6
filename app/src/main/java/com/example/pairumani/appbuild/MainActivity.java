@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     public void Radier(View view) {
 
 
-        Intent intent = new Intent(this, MamposteriaActivity.class);
+        Intent intent = new Intent(this, RadierActivity.class);
 
         startActivity(intent);
     }

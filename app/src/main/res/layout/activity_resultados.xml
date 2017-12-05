@@ -31,20 +31,22 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cálculo para cubrir "
             android:textColor="@color/white"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:layout_marginLeft="10dp"/>
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="100dp"
-    android:layout_marginLeft="140dp"
-    android:id="@+id/tvDatos"
-    android:text="ddd"
-    android:textColor="@color/white"/>
+            android:gravity="center"
+            android:id="@+id/tvDatos"
+            android:text="ddd"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
 
     </RelativeLayout>
 
@@ -310,6 +312,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="300dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cemento: Bolsas 42.5 Kg"
+        android:textColor="@color/white"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:textSize="16dp"/>
     <Button
         android:layout_width="350dp"
 

@@ -5,24 +5,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class ResultadoLosaActivity extends AppCompatActivity {
-
-
+public class ResultadoRadierActivity extends AppCompatActivity {
     TextView tvDatos;
 
     TextView tvMCemento, tvCCemento;
     TextView tvMgrava, tvCgrava;
     TextView tvMarena, tvCarena;
     TextView tvMagua, tvCagua;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resultado_losa);
+        setContentView(R.layout.activity_resultado_radier);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         recibirDatos();
-    }
 
+    }
 
     private void recibirDatos() {
         Bundle extras = getIntent().getExtras();
