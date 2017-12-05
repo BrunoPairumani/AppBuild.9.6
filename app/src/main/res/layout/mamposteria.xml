@@ -48,18 +48,33 @@
             android:textSize="16dp"
              ></TextView>
 
-
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="570dp"
+            android:textColor="@color/white"
+            android:text="Tipo de Ladrillo:"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:background="@drawable/com_facebook_tooltip_black_background">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="570dp"
-            android:background="@drawable/com_facebook_tooltip_black_background"
+            android:layout_height="match_parent"
+             android:gravity="center"
+
             android:textColor="@color/white"
-            android:text="Porporción del mortero"
-            android:textAlignment="center"
+            android:text="Proporción del mortero"
+
             android:textSize="17dp"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
 
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/informac" />
 
+        </RelativeLayout>
 
         <TextView
             android:layout_width="150dp"
@@ -85,26 +100,61 @@
 
 
 
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="175dp"
+    android:textColor="@color/white"
+    android:text="Tipo de Ladrillo:"
+    android:textAlignment="center"
+    android:textSize="17dp"
+    android:background="@drawable/com_facebook_tooltip_black_background">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="175dp"
+            android:layout_height="match_parent"
+           android:gravity="center"
             android:textColor="@color/white"
             android:text="Tipo de Ladrillo:"
             android:textAlignment="center"
             android:textSize="17dp"
-            android:background="@drawable/com_facebook_tooltip_black_background"/>
+            />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/informac" />
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="375dp"
+            android:textColor="@color/white"
+            android:text="Tipo de Ladrillo:"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:background="@drawable/com_facebook_tooltip_black_background">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="375dp"
-            android:background="@drawable/com_facebook_tooltip_black_background"
+            android:layout_height="match_parent"
+
+           android:gravity="center"
             android:textColor="@color/white"
             android:text="Espesor Mortero:"
             android:textAlignment="center"
             android:textSize="17dp"/>
 
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/informac" />
+        </RelativeLayout>
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
@@ -147,7 +197,7 @@
 
                 <RadioButton
                     android:id="@+id/rbtizon"
-                    android:layout_width="200dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:inputType="textNoSuggestions"
 
@@ -163,7 +213,7 @@
 
                 <RadioButton
                     android:id="@+id/rbsoga"
-                    android:layout_width="200dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
 
                     android:inputType="textNoSuggestions"
@@ -178,7 +228,7 @@
 
                 <RadioButton
                     android:id="@+id/rbpapelillo"
-                    android:layout_width="200dp"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
 
                     android:inputType="textNoSuggestions"
@@ -266,26 +316,9 @@
         </RelativeLayout>
 
 
-        <TextView
-            android:id="@+id/txtarea"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="220dp"
 
-            android:layout_marginTop="160dp"
-            android:text="Área"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark" />
 
-        <TextView
-            android:id="@+id/txtTotal"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
 
-            android:layout_alignStart="@+id/txtarea"
-            android:text="Cantidad de Ladrillos"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark" />
 
         <Button
             android:id="@+id/btncalcular"
@@ -313,15 +346,33 @@
                 android:gravity="center"/>
         </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="650dp"
+            android:textColor="@color/white"
+            android:text="Tipo de Ladrillo:"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:background="@drawable/com_facebook_tooltip_black_background">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="650dp"
-            android:background="@drawable/com_facebook_tooltip_black_background"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
             android:textColor="@color/white"
-            android:text="Porporción del repello"
+            android:text="Proporción del repello"
             android:textAlignment="center"
             android:textSize="17dp"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/informac" />
+
+        </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -333,6 +384,7 @@
                 android:textSize="18dp"
                 android:text="1|4, 360kg (Cemento), 1.15 m^3 (Agr. Fino)"
                 android:gravity="center"/>
+
         </RelativeLayout>
     </RelativeLayout>
 

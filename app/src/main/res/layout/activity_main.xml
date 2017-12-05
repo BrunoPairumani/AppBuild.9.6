@@ -7,10 +7,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/fondoc"
 
     tools:context="com.example.pairumani.appbuild.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:gravity="center"
+        android:text="Build'u"
+        android:textAlignment="center"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="18sp" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
 
-
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/informac2" />
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

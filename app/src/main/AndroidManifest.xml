@@ -12,7 +12,7 @@
         android:label="Build&apos;u"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
@@ -26,10 +26,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LogInActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".LogInActivity"      android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+
+        </activity>
+        <activity android:name=".HomeActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".ActivityFacebookUser" />
-        <activity android:name=".MamposteriaActivity" />
+        <activity android:name=".MamposteriaActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".ResultadosActivity"></activity>
     </application>
 

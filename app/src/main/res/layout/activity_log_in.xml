@@ -2,83 +2,144 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
-    android:paddingLeft="64dp"
-    android:paddingRight="64dp"
-    android:paddingTop="16dp"
+    android:background="@drawable/fondoc"
+
 
 
 
     tools:context="com.example.pairumani.appbuild.LogInActivity">
-
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="250dp"
-    >
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/signInButton"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            ></com.google.android.gms.common.SignInButton>
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:visibility="gone"
-           />
-
-</RelativeLayout>
-
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="320dp">
-
-        <com.facebook.login.widget.LoginButton
-            android:id="@+id/loginButton"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp" />
-
-        <ProgressBar
-            android:id="@+id/progressBar2"
-            style="?android:attr/progressBarStyleLarge"
-            android:layout_width="fill_parent"
-            android:layout_height="45dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-
-            android:visibility="gone"
-            />
+        android:layout_height="65dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
 
 
-    </RelativeLayout>
+        >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="370dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Build'u"
+
+            android:textColor="@color/com_facebook_button_background_color_focused"
+            android:textSize="18sp" />
 
         <Button
-            android:layout_width="fill_parent"
-            android:layout_height="35dp"
-            android:background="@color/com_facebook_button_background_color_focused_disabled"
-            android:text="Acceder sin conexión"
-            android:textColor="@color/cardview_light_background"
-            android:onClick="nexthome"
-            />
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/informac2" />
+
+
+
+
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:alpha="0.9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp">
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            >
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/signInButton"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+
+
+                ></com.google.android.gms.common.SignInButton>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/loginButton"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+
+                android:paddingBottom="12dp"
+                android:paddingTop="10dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="410dp">
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/holo_orange_light"
+                android:onClick="nexthome"
+                android:text="Acceder sin conexión"
+                android:textAllCaps="false"
+                android:textColor="@color/cardview_light_background" />
+        </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="18sp"
+        android:text="Inicio de Sesión"
+        android:gravity="center"
+        android:layout_marginTop="230dp"/>
+
 
 
 
