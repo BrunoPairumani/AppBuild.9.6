@@ -1,4 +1,4 @@
-package com.example.pairumani.appbuild;
+package apps.proyecto.pairumani.appbuild;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -14,7 +14,7 @@ public class ResultadoRadierActivity extends AppCompatActivity {
     TextView tvMgrava, tvCgrava;
     TextView tvMarena, tvCarena;
     TextView tvMagua, tvCagua;
-    TextView Pcemento, Pagua, Parena, Pcemento2, Parena2;
+    TextView Pcemento, Pagua, Parena, Pcemento2, Parena2, Ptotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,8 @@ public class ResultadoRadierActivity extends AppCompatActivity {
 
     private void recibirDatos() {
         Bundle extras = getIntent().getExtras();
+
+        // CREA VARIABLES PARA ASIGNARLES LOS DATOS
         String d1 = extras.getString("dato01");
         String d2 = extras.getString("dato02");
         String d3 = extras.getString("dato03");
@@ -42,11 +44,15 @@ public class ResultadoRadierActivity extends AppCompatActivity {
         String d11 = extras.getString("dato11");
         String d12= extras.getString("dato12");
         String d13 = extras.getString("dato13");
+        String d14 = extras.getString("dato14");
 
+        // TEXT VIEW
         tvDatos = (TextView) findViewById(R.id.tvDatos);
         tvCCemento = (TextView) findViewById(R.id.tvCCemento);
         tvMCemento = (TextView) findViewById(R.id.tvMCemento);
 
+
+        // ASIGNA VALORES A CADA TEXT VIEW
         tvMCemento.setText(d2 + " (Kg.)");
         tvCCemento.setText(d3 + " (Bolsas.)");
 
@@ -54,17 +60,17 @@ public class ResultadoRadierActivity extends AppCompatActivity {
         tvMarena.setText(d4+" (Lts.)");
 
         tvCarena = (TextView) findViewById(R.id.tvCarena);
-        tvCarena.setText(d5+" (m^3)");
+        tvCarena.setText(d5+" (m³)");
 
         tvMgrava = (TextView) findViewById(R.id.tvMgrava);
         tvCgrava = (TextView) findViewById(R.id.tvCgrava);
         tvMgrava.setText(d6+" (Lts)");
-        tvCgrava.setText(d7+" (m^3)");
+        tvCgrava.setText(d7+" (m³)");
 
         tvMagua = (TextView) findViewById(R.id.tvMagua);
         tvCagua = (TextView) findViewById(R.id.tvCagua);
         tvCagua.setText(d8+" (Lts)");
-        tvMagua.setText(d9+" (m^3)");
+        tvMagua.setText(d9+" (m³)");
 
         Pcemento = (TextView) findViewById(R.id.Pcemento);
         Pcemento.setText("$ " + d10 );
@@ -80,11 +86,13 @@ public class ResultadoRadierActivity extends AppCompatActivity {
         Parena2.setText("$ " + d13 );
 
 
-        tvDatos.setText(d1+ " m^3,  (H-20)");
+        tvDatos.setText(d1+ " m³,  (H-20)");
 
-
+        Ptotal = (TextView) findViewById(R.id.TxtPtotal);
+        Ptotal.setText("$ " + d14);
     }
 
+    // REGRESA A INICIO
     public void Home2(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

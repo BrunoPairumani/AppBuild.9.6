@@ -1,4 +1,4 @@
-package com.example.pairumani.appbuild;
+package apps.proyecto.pairumani.appbuild;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -39,4 +39,8 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void Home2(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

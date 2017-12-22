@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="wrap_content"
-    android:background="@drawable/radier"
-    tools:context="apps.proyecto.pairumani.appbuild.RadierActivity">
-
+    android:background="@drawable/fondob"
+    tools:context="apps.proyecto.pairumani.appbuild.LosaActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:background="@color/black"
@@ -146,7 +146,7 @@
                     android:layout_width="match_parent"
                     android:layout_marginTop="330dp"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/holo_orange_light"
+                     android:background="@android:color/holo_orange_light"
                     android:onClick="Operar"
                     android:text="Calcular" />
 
@@ -158,5 +158,6 @@
 
 
     </ScrollView>
+
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.example.pairumani.appbuild;
+package apps.proyecto.pairumani.appbuild;
 
 import android.app.Application;
 

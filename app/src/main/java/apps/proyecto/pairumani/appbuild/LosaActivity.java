@@ -1,4 +1,4 @@
-package com.example.pairumani.appbuild;
+package apps.proyecto.pairumani.appbuild;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,20 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 
 public class LosaActivity extends AppCompatActivity {
 
-
-    public double area;
-    public double Cmortero, CmorteroTd;  // CANTIDAD DE MORTERO
-    public double Cemento, CementoTd,  Totalarena, Totalagua, Totalbolsa, Totalgrava;  // CEMENTO
-    public double AgrFino, AgrFinoTd;
-    public double agua, aguaTd;
-    public double Pcemento, Parena, Pagua, Pgrava, Pcemento2, Parena2, Pladrillo;
+    public double area,
+            Cmortero, CmorteroTd,Cemento, CementoTd,
+            Totalarena, Totalagua, Totalbolsa, Totalgrava,  // CEMENTO
+            AgrFino, AgrFinoTd,
+            agua, aguaTd,
+            Ptotal, Pcemento, Parena, Pagua,  Parena2;
 
 
     EditText Mespesor1, Mancho1, Mlargo1;
@@ -40,27 +39,26 @@ public class LosaActivity extends AppCompatActivity {
 // objeto sea una variable global
         Calcular1 = (Button) findViewById(R.id.btnlosa);
 
-
     }
 
     public void Operar(View view) {
-
+try{
         String aux = Mespesor1.getText().toString();
         String aux1= Mlargo1.getText().toString();
         String aux2 = Mancho1.getText().toString();
 try{
 
         if(aux2.matches("") ){
-            Toast.makeText(getApplicationContext(),"Campo  Ancho está vacío", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),R.string.Ancho_Vacio, Toast.LENGTH_SHORT).show();
             Mancho1.setError("Llenar Campo");
 
             if(aux1.matches(""))
             {
-                Toast.makeText(getApplicationContext(),"Campo  Longitud está vacío", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),R.string.Longitud_Vacio, Toast.LENGTH_SHORT).show();
                 Mlargo1.setError("Llenar Campo");
                 if (aux.matches(""))
                 {
-                    Toast.makeText(getApplicationContext(),"Campo  Espesor está vacío", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),R.string.Espesor_Vacio, Toast.LENGTH_SHORT).show();
                     Mespesor1.setError("Llenar Campo");
                 }
             }
@@ -69,11 +67,11 @@ try{
         else {
 
             if (aux1.matches("")) {
-                Toast.makeText(getApplicationContext(), "Campo  Longitud está vacío", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),R.string.Longitud_Vacio, Toast.LENGTH_SHORT).show();
                 Mlargo1.setError("Llenar Campo");
 
                 if (aux.matches("")) {
-                    Toast.makeText(getApplicationContext(), "Campo  Espesor está vacío", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.Espesor_Vacio, Toast.LENGTH_SHORT).show();
                     Mespesor1.setError("Llenar Campo");
                 }
 
@@ -81,7 +79,7 @@ try{
 
             {
                 if (aux.matches("")) {
-                    Toast.makeText(getApplicationContext(), "Campo  Espesor está vacío", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.Espesor_Vacio, Toast.LENGTH_SHORT).show();
                     Mespesor1.setError("Llenar Campo");
                 } else {
 
@@ -116,6 +114,8 @@ try{
                     Totalagua = aguaTd / 1000;  // AGUA M^3
 
 
+
+                    // PRECIOS DE LOS MATERIALES
                     Pcemento = 7500 * Totalbolsa;
 
                     Parena = 48450 * Totalarena;
@@ -125,24 +125,35 @@ try{
 
                     Pagua = 3042 * Totalagua;
 
+                    // PRECIO TOTAL DE LOS MATERIALES
+
+                    Ptotal = Pcemento + Parena + Parena2 + Pagua;
+
+
                     Intent i = new Intent(this, ResultadoLosaActivity.class);
 
-                    i.putExtra("dato01", String.format("%.2f", area));
-                    i.putExtra("dato02", String.format("%.2f", CementoTd));
-                    i.putExtra("dato03", String.format("%.2f", Totalbolsa));   // TOTAL BOLSA
-                    i.putExtra("dato04", String.format("%.2f", AgrFinoTd));
-                    i.putExtra("dato05", String.format("%.2f", Totalarena));
-                    i.putExtra("dato06", String.format("%.2f", CmorteroTd));  // GRAVA
-                    i.putExtra("dato07", String.format("%.2f", Totalgrava));
-                    i.putExtra("dato08", String.format("%.2f", aguaTd));
-                    i.putExtra("dato09", String.format("%.2f", Totalagua));
+                    DecimalFormatSymbols simbolo=new DecimalFormatSymbols();
+                    simbolo.setDecimalSeparator(',');
+                    simbolo.setGroupingSeparator('.');
+                    DecimalFormat formateador = new DecimalFormat("###,###",simbolo);
+                    DecimalFormat formateador2 = new DecimalFormat("###,###.##",simbolo);
 
-                    i.putExtra("dato10", String.format("%.2f", Pcemento));
-                    i.putExtra("dato11", String.format("%.2f", Pagua));
-                    i.putExtra("dato12", String.format("%.2f", Parena));
-                    i.putExtra("dato13", String.format("%.2f", Parena2)); // GRAVA
+                    i.putExtra("dato01", formateador2.format(area));
+                    i.putExtra("dato02", formateador2.format(CementoTd));
+                    i.putExtra("dato03", formateador2.format(Totalbolsa));   // TOTAL BOLSA
+                    i.putExtra("dato04", formateador2.format(AgrFinoTd));
+                    i.putExtra("dato05", formateador2.format(Totalarena));
+                    i.putExtra("dato06", formateador2.format(CmorteroTd));  // GRAVA
+                    i.putExtra("dato07", formateador2.format(Totalgrava));
+                    i.putExtra("dato08", formateador2.format(aguaTd));
+                    i.putExtra("dato09", formateador2.format(Totalagua));
 
+                    i.putExtra("dato10", formateador.format(Pcemento));
+                    i.putExtra("dato11", formateador.format(Pagua));
+                    i.putExtra("dato12", formateador.format(Parena));
+                    i.putExtra("dato13", formateador.format(Parena2)); // GRAVA
 
+                    i.putExtra("dato14", formateador.format(Ptotal));
                     startActivity(i);
                 }
             }
@@ -150,14 +161,19 @@ try{
 
         }
 catch(Exception e){
-    Toast.makeText(getApplicationContext(), "Parámetros Inválidos, Ingresar Números", Toast.LENGTH_SHORT).show();
+    Toast.makeText(getApplicationContext(), R.string.No_num, Toast.LENGTH_SHORT).show();
     Mancho1.setError("Verificar");
     Mespesor1.setError("Verificar");
     Mlargo1.setError("Verificar");
 }
 
 
-
+}
+catch (Exception e){
+    Toast.makeText(getApplicationContext(), "Ocurrió un error, inténtelo de nuevo", Toast.LENGTH_SHORT).show();
+    Intent intent = new Intent(this, MamposteriaActivity.class);
+    startActivity(intent);
+}
 
 
     }

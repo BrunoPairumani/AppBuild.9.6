@@ -8,25 +8,33 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:528717690865:android:79fc9cb9378238bf",
+        "mobilesdk_app_id": "1:528717690865:android:580b412fe4ddc5aa",
         "android_client_info": {
-          "package_name": "com.example.pairumani.appbuild"
+          "package_name": "apps.proyecto.pairumani.appbuild"
         }
       },
       "oauth_client": [
         {
-          "client_id": "528717690865-im8i3ta3e7alen8p1ascgs3rlsju91su.apps.googleusercontent.com",
+          "client_id": "528717690865-hdc13cf5kvml1f03ofukoq1mvau827mf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.pairumani.appbuild",
+            "package_name": "apps.proyecto.pairumani.appbuild",
             "certificate_hash": "c1d4a917e77b6aebf284ef0ad9ed4f4feda76cd1"
           }
         },
         {
-          "client_id": "528717690865-3nd9cv8464k3jg00g4iqbj4bqf46qarc.apps.googleusercontent.com",
+          "client_id": "528717690865-tkck2ksgj9jrmov29l5rnfv98g0skjpi.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.pairumani.appbuild",
+            "package_name": "apps.proyecto.pairumani.appbuild",
+            "certificate_hash": "fffe33c4ee8d02f970c28266af0b3b23645f04fb"
+          }
+        },
+        {
+          "client_id": "528717690865-52t54tasr33ehf26j4ttj7r25k5ftdk9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apps.proyecto.pairumani.appbuild",
             "certificate_hash": "08db702ccfd051cb66209fc7e9fa73f41a0543d2"
           }
         },

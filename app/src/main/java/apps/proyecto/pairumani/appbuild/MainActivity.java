@@ -1,12 +1,10 @@
-package com.example.pairumani.appbuild;
+package apps.proyecto.pairumani.appbuild;
 
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,21 +14,13 @@ import android.widget.Toolbar;
 import com.bumptech.glide.Glide;
 import com.facebook.login.LoginManager;
 import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
-import com.facebook.appevents.AppEventsLogger;
-import com.facebook.FacebookSdk;
 
 
-
-
-import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -91,10 +81,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     }
 
     private void setUserData(FirebaseUser user) {
-
+     String email = user.getEmail();
         nameTextView.setText(user.getDisplayName());
-        emailTextView.setText(user.getEmail());
-       // idTextView.setText(user.getUid());
+        emailTextView.setText(email);
+        //emailTextView.setText(user.getEmail());
+       //idTextView.setText(user.get());
 
         Glide.with(this).load(user.getPhotoUrl()).into(photoImageView);
 

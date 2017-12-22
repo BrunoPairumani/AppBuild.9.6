@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondox"
-    tools:context="com.example.pairumani.appbuild.LogInActivity">
+    tools:context="apps.proyecto.pairumani.appbuild.LogInActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="65dp"

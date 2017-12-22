@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondoc"
-    tools:context="com.example.pairumani.appbuild.CotizarActivity">
+    tools:context="apps.proyecto.pairumani.appbuild.CotizarActivity">
 
     <RelativeLayout
         android:layout_marginTop="0dp"

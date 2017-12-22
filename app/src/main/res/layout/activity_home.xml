@@ -7,7 +7,7 @@
     android:background="@drawable/fondox"
 
 
-    tools:context="com.example.pairumani.appbuild.HomeActivity">
+    tools:context="apps.proyecto.pairumani.appbuild.HomeActivity">
 
 <RelativeLayout
     android:layout_width="match_parent"

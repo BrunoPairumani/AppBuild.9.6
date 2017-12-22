@@ -26,4 +26,9 @@
 
     <string name="action_settings">Settings</string>
 
+
+    <string name="Espesor_Vacio">Campo  Espesor está vacío</string>
+    <string name="Ancho_Vacio">Campo  Ancho está vacío</string>
+    <string name="Longitud_Vacio">Campo  Longitud está vacío</string>
+    <string name="No_num">Parámetros Inválidos, Ingresar Números</string>
 </resources>

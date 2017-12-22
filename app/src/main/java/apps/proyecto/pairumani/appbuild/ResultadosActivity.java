@@ -1,4 +1,4 @@
-package com.example.pairumani.appbuild;
+package apps.proyecto.pairumani.appbuild;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -16,7 +16,7 @@ public class ResultadosActivity extends AppCompatActivity {
     TextView tvMfino, tvCfino;
     TextView tvMppc, tvCppc;
     TextView tvMppf, tvCppf;
-    TextView Pcemento, Pladrillo, Parena, Pcemento2, Parena2;
+    TextView Pcemento, Pladrillo, Parena, Pcemento2, Parena2, Ptotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class ResultadosActivity extends AppCompatActivity {
         String d12= extras.getString("dato12");
         String d13 = extras.getString("dato13");
         String d14 = extras.getString("dato14");
-
+        String d15 = extras.getString("dato15");
         tvDatos = (TextView) findViewById(R.id.tvDatos);
         tvCLadrillo = (TextView) findViewById(R.id.tvCLadrillo);
         tvMLadrillo = (TextView) findViewById(R.id.tvMLadrillo);
@@ -58,13 +58,13 @@ public class ResultadosActivity extends AppCompatActivity {
 
         tvMfino = (TextView) findViewById(R.id.tvMfino);
         tvCfino = (TextView) findViewById(R.id.tvCfino);
-        tvMfino.setText(d6+" (m^3)");
-        tvCfino.setText(d6+" (m^3)");
+        tvMfino.setText(d6+" (m³)");
+        tvCfino.setText(d6+" (m³)");
 
         tvMmortero = (TextView) findViewById(R.id.tvMmortero);
         tvCmortero = (TextView) findViewById(R.id.tvCmortero);
-        tvCmortero.setText(d5+" (m^3/m^2)");
-        tvMmortero.setText(d5+" (m^3/m^2)");
+        tvCmortero.setText(d5+" (m³/m²)");
+        tvMmortero.setText(d5+" (m³/m²)");
 
         tvMppc = (TextView) findViewById(R.id.tvMppc);
         tvCppc = (TextView) findViewById(R.id.tvCppc);
@@ -73,10 +73,10 @@ public class ResultadosActivity extends AppCompatActivity {
 
         tvMppf = (TextView) findViewById(R.id.tvMppf);
         tvCppf = (TextView) findViewById(R.id.tvCppf);
-        tvCppf.setText(d9+" (m^3)");
-        tvMppf.setText(d9+" (m^3)");
+        tvCppf.setText(d9+" (m³)");
+        tvMppf.setText(d9+" (m³)");
 
-        tvDatos.setText(d1+ " metros cuadrados");
+        tvDatos.setText(d1+ " metros cuadrados (m²)");
 
         Pcemento = (TextView) findViewById(R.id.Pcemento);
         Pcemento.setText("$ " + d10 );
@@ -93,6 +93,9 @@ public class ResultadosActivity extends AppCompatActivity {
 
         Pladrillo= (TextView) findViewById(R.id.Pladrillo);
         Pladrillo.setText("$ " + d14 );
+
+        Ptotal = (TextView) findViewById(R.id.TxtPtotal);
+        Ptotal.setText("$ " + d15);
 
 
 

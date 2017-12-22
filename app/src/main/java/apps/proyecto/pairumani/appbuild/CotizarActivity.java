@@ -1,4 +1,4 @@
-package com.example.pairumani.appbuild;
+package apps.proyecto.pairumani.appbuild;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
