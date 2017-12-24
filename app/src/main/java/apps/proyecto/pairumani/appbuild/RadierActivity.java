@@ -45,16 +45,16 @@ try {
 
             if(aux2.matches("") ){
                 Toast.makeText(getApplicationContext(),R.string.Ancho_Vacio, Toast.LENGTH_SHORT).show();
-                Mancho1.setError("Llenar Campo");
+                Mancho1.setError("Verificar");
 
                 if(aux1.matches(""))
                 {
                     Toast.makeText(getApplicationContext(),R.string.Longitud_Vacio, Toast.LENGTH_SHORT).show();
-                    Mlargo1.setError("Llenar Campo");
+                    Mlargo1.setError("Verificar");
                     if (aux.matches(""))
                     {
                         Toast.makeText(getApplicationContext(),R.string.Espesor_Vacio, Toast.LENGTH_SHORT).show();
-                        Mespesor1.setError("Llenar Campo");
+                        Mespesor1.setError("Verificar");
                     }
                 }
 
@@ -63,11 +63,11 @@ try {
 
                 if (aux1.matches("")) {
                     Toast.makeText(getApplicationContext(), R.string.Longitud_Vacio, Toast.LENGTH_SHORT).show();
-                    Mlargo1.setError("Llenar Campo");
+                    Mlargo1.setError("Verificar");
 
                     if (aux.matches("")) {
                         Toast.makeText(getApplicationContext(), R.string.Espesor_Vacio, Toast.LENGTH_SHORT).show();
-                        Mespesor1.setError("Llenar Campo");
+                        Mespesor1.setError("Verificar");
                     }
 
                 } else
@@ -75,7 +75,7 @@ try {
                 {
                     if (aux.matches("")) {
                         Toast.makeText(getApplicationContext(), R.string.Espesor_Vacio, Toast.LENGTH_SHORT).show();
-                        Mespesor1.setError("Llenar Campo");
+                        Mespesor1.setError("Verificar");
                     } else {
 
                         double v1 = Double.parseDouble(Mancho1.getText().toString());

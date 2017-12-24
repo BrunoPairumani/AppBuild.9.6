@@ -21,9 +21,9 @@ public class MamposteriaActivity extends AppCompatActivity {
     public double Cemento, CementoTd, TotalCemento, Totalpc, Totalpf, Totalbolsa, Totalbolsap;  // CEMENTO
     public double AgrFino, AgrFinoTd, TotalAgrFino;
     public double pcemento, pfino;
-    public double Pcemento, Parena, Pagua, Pgrava, Pcemento2, Parena2, Pladrillo, Ptotal;
+    public double Pcemento, Parena, Pcemento2, Parena2, Pladrillo, Ptotal;
 
-    EditText Maltura1, Manchura1, Mlargo1, desperdicio;
+    EditText Maltura1, Manchura1, Mlargo1;
     Button Calcular1;
     RadioButton rbespesor11, rbespesor21, rbespesor31;
     RadioButton rbtizon1, rbsoga1, rbpapelillo1;
@@ -78,15 +78,15 @@ public class MamposteriaActivity extends AppCompatActivity {
             try {
                 if (aux.matches("")) {
                     Toast.makeText(getApplicationContext(), "Campo Altura está vacío", Toast.LENGTH_SHORT).show();
-                    Maltura1.setError("Llenar Campo");
+                    Maltura1.setError("Verificar");
                     if (aux1.matches("")) {
                         Toast.makeText(getApplicationContext(), "Campo Longitud está vacío", Toast.LENGTH_SHORT).show();
-                        Mlargo1.setError("Llenar Campo");
+                        Mlargo1.setError("Verificar");
                     }
                 } else {
                     if (aux1.matches("")) {
                         Toast.makeText(getApplicationContext(), "Campo Longitud está vacío", Toast.LENGTH_SHORT).show();
-                        Mlargo1.setError("Llenar Campo");
+                        Mlargo1.setError("Verificar");
                     } else {
                  /* double dpdicio = Double.parseDouble(desperdicio.getText().toString());
         double alt = Double.parseDouble(Maltura1.getText().toString());

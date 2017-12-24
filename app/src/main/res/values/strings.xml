@@ -28,7 +28,7 @@
 
 
     <string name="Espesor_Vacio">Campo  Espesor está vacío</string>
-    <string name="Ancho_Vacio">Campo  Ancho está vacío</string>
-    <string name="Longitud_Vacio">Campo  Longitud está vacío</string>
-    <string name="No_num">Parámetros Inválidos, Ingresar Números</string>
+    <string name="Ancho_Vacio">Por favor, Ingresar Ancho</string>
+    <string name="Longitud_Vacio">Por favor, Ingresar Longitud </string>
+    <string name="No_num">Parámetros Inválidos, Por favor, Ingresar Números</string>
 </resources>

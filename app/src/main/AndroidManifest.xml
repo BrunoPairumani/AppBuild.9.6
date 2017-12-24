@@ -2,11 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="apps.proyecto.pairumani.appbuild">
 
+    <!-- PERMISO PARA QUE LA APLICACIÓN SE CONECTE A INTERNET -->
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <application
+    <!-- PERMISO PARA ACCEDER A GPS -->
 
-        android:name="apps.proyecto.pairumani.appbuild.AppBuildApp"
+    <application
+        android:name=".AppBuildApp"
         android:layout_gravity="center"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,12 +16,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- ID DE FACEBOOK DESARROLLADORES -->
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name="apps.proyecto.pairumani.appbuild.MainActivity"
+            android:name=".MainActivity"
             android:label="Build&apos;u">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,23 +32,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="apps.proyecto.pairumani.appbuild.LogInActivity"
+            android:name=".LogInActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name="apps.proyecto.pairumani.appbuild.HomeActivity"
+            android:name=".HomeActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name="apps.proyecto.pairumani.appbuild.ActivityFacebookUser" />
+        <activity android:name=".ActivityFacebookUser" />
         <activity
-            android:name="apps.proyecto.pairumani.appbuild.MamposteriaActivity"
+            android:name=".MamposteriaActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name="apps.proyecto.pairumani.appbuild.ResultadosActivity" />
+        <activity android:name=".ResultadosActivity" />
         <activity
-            android:name="apps.proyecto.pairumani.appbuild.LosaActivity"
+            android:name=".LosaActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name="apps.proyecto.pairumani.appbuild.ResultadoLosaActivity" />
-        <activity android:name="apps.proyecto.pairumani.appbuild.RadierActivity" />
-        <activity android:name="apps.proyecto.pairumani.appbuild.ResultadoRadierActivity" />
-        <activity android:name="apps.proyecto.pairumani.appbuild.CotizarActivity"></activity>
+        <activity android:name=".ResultadoLosaActivity" />
+        <activity android:name=".RadierActivity" />
+        <activity android:name=".ResultadoRadierActivity" />
+        <activity android:name=".CotizarActivity" />
+        <activity android:name=".Correo"></activity>
     </application>
 
 </manifest>

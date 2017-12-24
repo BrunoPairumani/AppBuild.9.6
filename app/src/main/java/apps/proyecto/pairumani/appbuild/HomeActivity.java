@@ -43,4 +43,12 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+
+    public void Enviar_Cotizacion(View view) {
+
+
+
+
+    }
 }

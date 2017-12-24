@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,6 +10,13 @@
 
     tools:context="apps.proyecto.pairumani.appbuild.HomeActivity">
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_marginTop="0dp"
         android:layout_width="match_parent"
@@ -64,14 +72,16 @@
 <ScrollView
     android:layout_marginTop="130dp"
     android:layout_width="match_parent"
-    android:layout_height="330dp"
-    android:layout_marginLeft="0dp">
+    android:layout_height="420dp"
+    android:layout_marginLeft="0dp"
+    android:id="@+id/Sc-2">
 
 
     <HorizontalScrollView
 
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/Sc-1">
 <TableLayout
 
     android:layout_width="wrap_content"
@@ -478,37 +488,92 @@
 </TableLayout>
     </HorizontalScrollView>
 </ScrollView>
-<RelativeLayout
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="300dp">
+    android:orientation="vertical"
+    android:layout_marginTop="550dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cemento: Bolsas 42.5 Kg, Arena 25kg, Grava 25  Kg. "
         android:textColor="@color/black"
-        android:layout_marginTop="160dp"
+     android:layout_marginTop="10dp"
         android:gravity="center"
         android:textSize="16dp"/>
+
+      <Button
+        android:layout_width="350dp"
+
+        android:layout_height="50dp"
+
+        android:layout_gravity="center"
+
+        android:layout_marginTop="50dp"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center"
+        android:text="Enviar Correo"
+        android:onClick="EnviarCorreo"
+        android:id="@+id/btn_Correo" />
+
     <Button
         android:layout_width="350dp"
 
         android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
 
-        android:layout_marginTop="200dp"
+     android:layout_gravity="center"
+
+        android:layout_marginTop="-50dp"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center"
+        android:text="Enviar"
+        android:onClick="Enviar_Cotizacion"
+        android:id="@+id/btn_Enviar"
+        android:visibility="invisible"/>
+
+    <EditText
+
+        android:id="@+id/et_to"
+
+        android:layout_width="350dp"
+        android:ems="10"
+        android:layout_height="50dp"
+       android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Ingresar Correo Electrónico....."
+        android:inputType="textEmailAddress"
+        android:alpha="0.90"
+        android:visibility="invisible"
+        android:textSize="20dp"
+
+        android:textColor="@color/com_facebook_blue"
+        android:background="@color/white"
+        android:textAlignment="center"
+       />
+
+
+    <Button
+        android:layout_width="350dp"
+
+        android:layout_height="50dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
         android:background="@android:color/holo_orange_light"
         android:gravity="center"
         android:text="Inicio"
         android:onClick="Home2"
         android:id="@+id/Home" />
 
+
+
+</LinearLayout>
+
+
 </RelativeLayout>
 
-
-
-
+    </ScrollView>
 
 </RelativeLayout>

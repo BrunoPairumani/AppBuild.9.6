@@ -7,7 +7,12 @@
     android:background="@drawable/fondox"
     tools:context="apps.proyecto.pairumani.appbuild.ResultadoRadierActivity">
 
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_marginTop="0dp"
         android:layout_width="match_parent"
@@ -80,7 +85,7 @@
                 android:layout_alignBottom="@+id/textView2"
                 android:layout_alignParentStart="true"
                 android:layout_marginBottom="18dp"
-
+                android:id="@+id/Tbinfo"
                 android:background="@color/white"
                 android:padding="5dp"
                 android:stretchColumns="*">
@@ -380,45 +385,88 @@
             </TableLayout>
         </HorizontalScrollView>
     </ScrollView>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="330dp"> <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cemento: Bolsas 42.5 Kg, Arena 25kg, Grava 25  Kg. "
-        android:textColor="@color/black"
-        android:layout_marginTop="120dp"
-        android:gravity="center"
-        android:textSize="16dp"
-        android:id="@+id/textView2" />
-        <Button
-            android:layout_width="350dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="440dp">
 
-            android:layout_height="50dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cemento: Bolsas 42.5 Kg, Arena 25kg, Grava 25  Kg. "
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textSize="16dp"/>
 
-            android:layout_marginTop="185dp"
-            android:background="@android:color/holo_orange_light"
-            android:gravity="center"
-            android:text="Inicio"
-            android:onClick="Home2"
-            android:id="@+id/Home" />
+                <Button
+                    android:layout_width="350dp"
 
-        <TextView
+                    android:layout_height="50dp"
 
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_alignBottom="@+id/textView2"
-            android:layout_alignStart="@+id/Home"
+                    android:layout_gravity="center"
 
-            android:layout_marginBottom="38dp"
-            android:layout_marginStart="85dp"
-            android:gravity="right"
-            android:padding="10dp"
-            android:textColor="@color/black" />
+                    android:layout_marginTop="50dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:gravity="center"
+                    android:text="Enviar Correo"
+                    android:onClick="EnviarCorreo"
+                    android:id="@+id/btn_Correo" />
 
-    </RelativeLayout>
+                <Button
+                    android:layout_width="350dp"
 
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="-50dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:gravity="center"
+                    android:text="Enviar"
+                    android:onClick="Enviar_Cotizacion"
+                    android:id="@+id/btn_Enviar"
+                    android:visibility="invisible"/>
+
+                <EditText
+
+                    android:id="@+id/et_to"
+
+                    android:layout_width="350dp"
+                    android:ems="10"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:hint="Ingresar Correo Electrónico....."
+                    android:inputType="textEmailAddress"
+                    android:alpha="0.90"
+                    android:visibility="invisible"
+                    android:textSize="20dp"
+
+                    android:textColor="@color/com_facebook_blue"
+                    android:background="@color/white"
+                    android:textAlignment="center"
+                    />
+
+
+                <Button
+                    android:layout_width="350dp"
+
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_orange_light"
+                    android:gravity="center"
+                    android:text="Inicio"
+                    android:onClick="Home2"
+                    android:id="@+id/Home" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
