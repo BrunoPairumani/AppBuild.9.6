@@ -33,13 +33,9 @@ public class ResultadoRadierActivity extends AppCompatActivity implements View.O
     Session session = null;
     ProgressDialog pdialog = null;
     Context context = null;
-
     String rec, subject, textMessage;
     String sub;
-
-
     TextView tvDatos;
-
     TextView tvMCemento, tvCCemento;
     TextView tvMgrava, tvCgrava;
     TextView tvMarena, tvCarena;
@@ -47,7 +43,6 @@ public class ResultadoRadierActivity extends AppCompatActivity implements View.O
     TextView Pcemento, Pagua, Parena, Pcemento2, Parena2, Ptotal;
     Button btn_correo, login;
     EditText correo;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,20 +60,11 @@ public class ResultadoRadierActivity extends AppCompatActivity implements View.O
         login = (Button) findViewById(R.id.btn_Enviar);
 
         btn_correo = (Button) findViewById(R.id.btn_Correo);
-
-
-
-
         recibirDatos();
-
         login.setOnClickListener(this);
-
-
     }
-
     private void recibirDatos() {
         Bundle extras = getIntent().getExtras();
-
         // CREA VARIABLES PARA ASIGNARLES LOS DATOS
         String d1 = extras.getString("dato01");
         String d2 = extras.getString("dato02");
@@ -94,8 +80,6 @@ public class ResultadoRadierActivity extends AppCompatActivity implements View.O
         String d12= extras.getString("dato12");
         String d13 = extras.getString("dato13");
         String d14 = extras.getString("dato14");
-
-
         // HTML CORREO
 
         html = "<!DOCTYPE html>" +

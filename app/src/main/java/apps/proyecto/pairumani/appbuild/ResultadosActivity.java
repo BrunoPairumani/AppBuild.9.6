@@ -62,9 +62,8 @@ public class ResultadosActivity extends AppCompatActivity implements View.OnClic
 
         correo = (EditText) findViewById(R.id.et_to); // DESTINATARIO DEL CORREO
         sub = "Cotizacón";  // ASUNTO DEL CORREO
-       // msg = "HOLA MUNDO" ; // Mensaje del Correo
 
-      //  login.setOnClickListener(this);
+
         context = this;
         login = (Button) findViewById(R.id.btn_Enviar);
 

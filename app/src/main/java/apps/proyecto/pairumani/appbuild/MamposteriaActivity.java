@@ -1,5 +1,6 @@
 package apps.proyecto.pairumani.appbuild;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -564,5 +565,18 @@ public class MamposteriaActivity extends AppCompatActivity {
 
 
 
+
+
+
+        //DIALOG MENSAJES
+
+    public void showDialog(View v) {
+
+        FragmentManager manager = getFragmentManager();
+        LadrilloDialog myDialog = new LadrilloDialog();
+
+        myDialog.show(manager, "LadrilloDialog");
+
+    }
 
 }

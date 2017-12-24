@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    tools:context="apps.proyecto.pairumani.appbuild.LadrilloDialog"
+    android:background="@color/com_facebook_blue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/white"
+        android:text="Tipo de Ladrillo:"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:background="@drawable/com_facebook_tooltip_black_background">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Tipo de Ladrillo:"
+            android:textAlignment="center"
+            android:textSize="17dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_height="100dp"
+      android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="@drawable/Condor"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="140dp"
+        android:background="@color/white"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="@drawable/Fiscal"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="270dp"
+        android:background="@color/white"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="@drawable/Princesa"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/white"
+        android:text="Tipo de Ladrillo:"
+        android:textAlignment="center"
+        android:textSize="17dp"
+     >
+        <Button
+            android:layout_width="100dp"
+            android:id="@+id/btncerrar"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:text="Cerrar"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

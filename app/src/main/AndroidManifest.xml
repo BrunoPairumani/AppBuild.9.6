@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- PERMISO PARA ACCEDER A GPS -->
-
     <application
         android:name=".AppBuildApp"
         android:layout_gravity="center"
@@ -49,7 +48,8 @@
         <activity android:name=".RadierActivity" />
         <activity android:name=".ResultadoRadierActivity" />
         <activity android:name=".CotizarActivity" />
-        <activity android:name=".Correo"></activity>
+        <activity android:name=".Correo" />
+        <activity android:name=".LadrilloDialog"></activity>
     </application>
 
 </manifest>

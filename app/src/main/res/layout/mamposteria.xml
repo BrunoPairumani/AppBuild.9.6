@@ -120,7 +120,7 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-
+        android:onClick="showDialog"
         android:layout_alignParentEnd="true"
         android:background="@drawable/informac" />
 
