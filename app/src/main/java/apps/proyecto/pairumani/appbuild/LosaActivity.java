@@ -2,6 +2,7 @@ package apps.proyecto.pairumani.appbuild;
 
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +32,7 @@ public class LosaActivity extends AppCompatActivity {
       @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+          setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_losa);
 
         Mespesor1= (EditText) findViewById(R.id.Mespesor);

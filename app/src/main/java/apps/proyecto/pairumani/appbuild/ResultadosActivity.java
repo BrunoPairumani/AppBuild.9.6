@@ -58,7 +58,7 @@ public class ResultadosActivity extends AppCompatActivity implements View.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultados);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+       // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         correo = (EditText) findViewById(R.id.et_to); // DESTINATARIO DEL CORREO
         sub = "Cotizacón";  // ASUNTO DEL CORREO

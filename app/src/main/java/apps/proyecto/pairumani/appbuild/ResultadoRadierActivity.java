@@ -48,7 +48,7 @@ public class ResultadoRadierActivity extends AppCompatActivity implements View.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultado_radier);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+      //  setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         correo = (EditText) findViewById(R.id.et_to); // DESTINATARIO DEL CORREO
        // msg = (TableLayout) findViewById(R.id.Tbinfo);

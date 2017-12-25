@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondox"
+    android:orientation="vertical"
 
 
     tools:context="apps.proyecto.pairumani.appbuild.HomeActivity">
@@ -14,6 +15,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="1000dp">
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -34,7 +36,8 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="30dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold">
+                    </TextView>
         <TextView
             android:id="@+id/txttitulo"
             android:layout_width="fill_parent"
@@ -72,6 +75,8 @@
 <ScrollView
     android:layout_marginTop="130dp"
     android:layout_width="match_parent"
+
+    android:layout_gravity="center"
     android:layout_height="420dp"
     android:layout_marginLeft="0dp"
     android:id="@+id/Sc-2">
@@ -79,21 +84,25 @@
 
     <HorizontalScrollView
 
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Sc-1">
 <TableLayout
 
-    android:layout_width="wrap_content"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center"
+
+    android:gravity="center"
     android:background="@color/white"
     android:padding="10dp"
     android:stretchColumns="*">
     <TableRow
-        android:layout_height="match_parent"
-        android:layout_width="fill_parent">
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="center"
@@ -110,14 +119,14 @@
         android:text="Medida" android:textColor="@color/black"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="20dp"
         android:gravity="center"
         android:text="Cantidad" android:textColor="@color/black"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:padding="20dp"
             android:gravity="center"
@@ -135,11 +144,11 @@
     android:background="@color/black"
     android:orientation="horizontal"></LinearLayout>
 <TableRow
-    android:layout_height="wrap_content"
-    android:layout_width="fill_parent">
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
     <TextView
 
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="left"
@@ -149,7 +158,7 @@
 
     <TextView
         android:id="@+id/tvCLadrillo"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:gravity="right"
         android:padding="10dp"
@@ -157,7 +166,7 @@
         android:textColor="@color/black" />
     <TextView
         android:id="@+id/tvMLadrillo"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="right"
@@ -166,7 +175,7 @@
        />
     <TextView
         android:id="@+id/Pladrillo"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:text="Cantidad"
@@ -182,10 +191,10 @@
 
     <TableRow
         android:layout_height="wrap_content"
-        android:layout_width="fill_parent">
+        android:layout_width="match_parent">
     <TextView
 
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="left"
@@ -195,7 +204,7 @@
 
     <TextView
         android:id="@+id/tvCCemento"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="right"
@@ -204,7 +213,7 @@
        />
     <TextView
         android:id="@+id/tvMCemento"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="right"
@@ -213,7 +222,7 @@
     />
         <TextView
             android:id="@+id/Pcemento"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:padding="10dp"
             android:text="Cantidad"
@@ -229,11 +238,11 @@
 
     <TableRow
         android:layout_height="wrap_content"
-        android:layout_width="fill_parent">
+        android:layout_width="match_parent">
 
     <TextView
 
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="left"
@@ -243,7 +252,7 @@
 
     <TextView
         android:id="@+id/tvMmortero"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="right"
@@ -252,7 +261,7 @@
         />
     <TextView
         android:id="@+id/tvCmortero"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="right"
@@ -273,11 +282,11 @@
 
     <TableRow
         android:layout_height="wrap_content"
-        android:layout_width="fill_parent">
+        android:layout_width="match_parent">
 
     <TextView
 
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="left"
@@ -287,7 +296,7 @@
 
     <TextView
         android:id="@+id/tvMfino"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="right"
@@ -296,7 +305,7 @@
         />
     <TextView
         android:id="@+id/tvCfino"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="right"
@@ -305,7 +314,7 @@
         />
         <TextView
             android:id="@+id/Parena"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:padding="10dp"
             android:text="Cantidad"
@@ -321,10 +330,10 @@
 
 
     <TableRow android:layout_height="wrap_content"
-        android:layout_width="fill_parent">
+        android:layout_width="match_parent">
     <TextView
 
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="center"
@@ -342,11 +351,11 @@
         android:orientation="horizontal"></LinearLayout>
 
     <TableRow android:layout_height="wrap_content"
-        android:layout_width="fill_parent">
+        android:layout_width="match_parent">
 
     <TextView
 
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="left"
@@ -356,7 +365,7 @@
 
     <TextView
         android:id="@+id/tvMppc"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="right"
@@ -365,7 +374,7 @@
       />
     <TextView
         android:id="@+id/tvCppc"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="right"
@@ -374,7 +383,7 @@
       />
         <TextView
             android:id="@+id/Pcemento2"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:padding="10dp"
             android:text="Cantidad"
@@ -391,7 +400,7 @@
         android:layout_width="fill_parent">
     <TextView
 
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="left"
@@ -401,7 +410,7 @@
 
     <TextView
         android:id="@+id/tvMppf"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="right"
@@ -410,7 +419,7 @@
         />
     <TextView
         android:id="@+id/tvCppf"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="right"
@@ -420,7 +429,7 @@
 
         <TextView
             android:id="@+id/Parena2"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:padding="10dp"
             android:text="Cantidad"
@@ -437,13 +446,13 @@
 
 
     <TableRow
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
         <TextView
             android:textStyle="bold"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:gravity="left"
             android:padding="10dp"
@@ -452,7 +461,7 @@
 
         <TextView
 
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:gravity="right"
             android:padding="10dp"
@@ -470,7 +479,7 @@
 
         <TextView
             android:id="@+id/TxtPtotal"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:gravity="right"
             android:padding="10dp"

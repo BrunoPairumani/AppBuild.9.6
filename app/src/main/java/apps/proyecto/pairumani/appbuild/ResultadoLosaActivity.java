@@ -50,7 +50,7 @@ public class ResultadoLosaActivity extends AppCompatActivity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultado_losa);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         correo = (EditText) findViewById(R.id.et_to);
         sub = "Cotizacón";  // ASUNTO DEL CORREO

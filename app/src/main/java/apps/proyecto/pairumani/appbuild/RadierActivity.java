@@ -2,6 +2,7 @@ package apps.proyecto.pairumani.appbuild;
 
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,8 +31,8 @@ public class RadierActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_radier);
-
-        Mespesor1= (EditText) findViewById(R.id.Mespesor);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+                Mespesor1= (EditText) findViewById(R.id.Mespesor);
         Mancho1 = (EditText) findViewById(R.id.Mancho);
         Mlargo1 = (EditText) findViewById(R.id.Mlargo);
 

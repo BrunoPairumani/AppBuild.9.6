@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:orientation="vertical"
     android:background="@drawable/fondox"
     tools:context="apps.proyecto.pairumani.appbuild.ResultadoRadierActivity">
 
@@ -13,378 +15,378 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-    <RelativeLayout
-        android:layout_marginTop="0dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="fill_parent"
-            android:gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-
-            android:layout_alignParentTop="true"
-            android:text="Resultado"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="bold"></TextView>
-        <TextView
-            android:id="@+id/txttitulo"
-            android:layout_width="fill_parent"
-            android:gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="35dp"
-            android:layout_alignParentTop="true"
-            android:text="Radier"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="bold"></TextView>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cálculo para cubrir "
-            android:textColor="@color/black"
-            android:layout_marginTop="100dp"
-            android:gravity="center"
-            android:textSize="16dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="125dp"
-            android:gravity="center"
-            android:id="@+id/tvDatos"
-            android:text="ddd"
-            android:textColor="@color/black"
-            android:textSize="16dp"/>
-
-    </RelativeLayout>
-
-    <ScrollView
-        android:layout_marginTop="160dp"
-        android:layout_width="match_parent"
-        android:layout_height="330dp"
-        android:layout_marginLeft="0dp"
-        android:id="@+id/scrollView2">
-        <HorizontalScrollView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp">
-
-            <TableLayout
-
+            <RelativeLayout
+                android:layout_marginTop="0dp"
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:layout_alignBottom="@+id/textView2"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="18dp"
-                android:id="@+id/Tbinfo"
-                android:background="@color/white"
-                android:padding="5dp"
-                android:stretchColumns="*">
+                android:layout_height="wrap_content">
 
-                <TableRow
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_alignParentTop="true"
+                    android:text="Resultado"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:id="@+id/txttitulo"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_alignParentTop="true"
+                    android:text="Radier H-20"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cálculo para cubrir "
+                    android:textColor="@color/black"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="125dp"
+                    android:gravity="center"
+                    android:id="@+id/tvDatos"
+                    android:text="ddd"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_marginTop="160dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/scrollView2">
+                <HorizontalScrollView
 
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp">
 
-                    <TextView
-                        android:layout_width="fill_parent"
+                    <TableLayout
 
-                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
                         android:gravity="center"
-                        android:padding="20dp"
-                        android:text="Material"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="center"
-                        android:padding="20dp"
-                        android:text="Medida"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="center"
-                        android:padding="20dp"
-                        android:text="Cantidad"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="center"
-                        android:padding="20dp"
-                        android:text="Precio"
-                        android:textColor="@color/black" />
-
-                </TableRow>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@color/black"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="left"
+                        android:background="@color/white"
                         android:padding="10dp"
-                        android:text="Cemento"
-                        android:textColor="@color/black" />
+                        android:stretchColumns="*">
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:padding="20dp"
+                                android:text="Material"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:padding="20dp"
+                                android:text="Medida"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:padding="20dp"
+                                android:text="Cantidad"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:padding="20dp"
+                                android:text="Precio"
+                                android:textColor="@color/black" />
+
+                        </TableRow>
 
 
-                    <TextView
-                        android:id="@+id/tvMCemento"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Medida"
-                        android:textColor="@color/black" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/black"
 
-                    <TextView
-                        android:id="@+id/tvCCemento"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Cantidad"
-                        android:textColor="@color/black" />
+                            android:orientation="horizontal"></LinearLayout>
 
-                    <TextView
-                        android:id="@+id/Pcemento"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Cantidad"
-                        android:textColor="@color/black" />
-                </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@color/cardview_dark_background"
-                    android:orientation="horizontal"></LinearLayout>
+                            <TextView
 
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="left"
-                        android:padding="10dp"
-                        android:text="Arena"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvMarena"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Medida"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvCarena"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Cantidad"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/Parena"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Cantidad"
-                        android:textColor="@color/black" />
-                </TableRow>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@color/cardview_dark_background"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="left"
-                        android:padding="10dp"
-                        android:text="Grava"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvMgrava"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Medida"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvCgrava"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Cantidad"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/Pgrava"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Cantidad"
-                        android:textColor="@color/black" />
-
-                </TableRow>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@color/cardview_dark_background"
-                    android:orientation="horizontal"></LinearLayout>
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:padding="10dp"
+                                android:text="Cemento"
+                                android:textColor="@color/black" />
 
 
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tvMCemento"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Medida"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/tvCCemento"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Cantidad"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/Pcemento"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Cantidad"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/cardview_dark_background"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:padding="10dp"
+                                android:text="Arena"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/tvMarena"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Medida"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/tvCarena"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Cantidad"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/Parena"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Cantidad"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/cardview_dark_background"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:padding="10dp"
+                                android:text="Grava"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/tvMgrava"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Medida"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/tvCgrava"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Cantidad"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/Pgrava"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Cantidad"
+                                android:textColor="@color/black" />
+
+                        </TableRow>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/cardview_dark_background"
+                            android:orientation="horizontal"></LinearLayout>
 
 
-                    <TextView
-
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="left"
-                        android:padding="10dp"
-                        android:text="Agua"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvCagua"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Cantidad"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/tvMagua"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Medida"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/Pagua"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:text="Cantidad"
-                        android:textColor="@color/black" />
-                </TableRow>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@color/cardview_dark_background"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
 
-                    <TextView
-                        android:textStyle="bold"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="left"
-                        android:padding="10dp"
-                        android:text="Total"
-                        android:textColor="@color/black" />
+                            <TextView
 
-                    <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:padding="10dp"
+                                android:text="Agua"
+                                android:textColor="@color/black" />
 
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
+                            <TextView
+                                android:id="@+id/tvCagua"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Cantidad"
+                                android:textColor="@color/black" />
 
-                        android:textColor="@color/black" />
-                    <TextView
+                            <TextView
+                                android:id="@+id/tvMagua"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Medida"
+                                android:textColor="@color/black" />
 
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
+                            <TextView
+                                android:id="@+id/Pagua"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Cantidad"
+                                android:textColor="@color/black" />
+                        </TableRow>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/cardview_dark_background"
+                            android:orientation="horizontal"></LinearLayout>
 
-                        android:textColor="@color/black" />
-                    <TextView
-                        android:id="@+id/TxtPtotal"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="right"
-                        android:padding="10dp"
-                        android:textStyle="bold"
-                        android:text="Total"
-                        android:textColor="@color/black" />
-                </TableRow>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="2dp"
-                    android:background="@color/cardview_dark_background"
-                    android:orientation="horizontal"></LinearLayout>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
 
-            </TableLayout>
-        </HorizontalScrollView>
-    </ScrollView>
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:padding="10dp"
+                                android:text="Total"
+                                android:textColor="@color/black" />
+
+                            <TextView
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+
+                                android:textColor="@color/black" />
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/TxtPtotal"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:textStyle="bold"
+                                android:text="Total"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/cardview_dark_background"
+                            android:orientation="horizontal"></LinearLayout>
+
+
+                    </TableLayout>
+                </HorizontalScrollView>
+            </ScrollView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -425,7 +427,7 @@
                     android:background="@android:color/holo_orange_light"
                     android:gravity="center"
                     android:text="Enviar"
-                    android:onClick="Enviar_Cotizacion"
+
                     android:id="@+id/btn_Enviar"
                     android:visibility="invisible"/>
 
@@ -469,4 +471,5 @@
 
         </RelativeLayout>
     </ScrollView>
+
 </RelativeLayout>
