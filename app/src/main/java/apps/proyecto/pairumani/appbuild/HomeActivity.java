@@ -58,10 +58,10 @@ public class HomeActivity extends AppCompatActivity {
 
     public void mampDialog(View view) {
 
-        FragmentManager manager4 = getFragmentManager();
-        RepelloDialog myDialog4 = new RepelloDialog();
+        FragmentManager manager7 = getFragmentManager();
+        MampDialog myDialog7 = new MampDialog();
 
-        myDialog4.show(manager4, "RepelloDialog");
+        myDialog7.show(manager7, "MampDialog");
     }
 
     public void losahDialog(View view) {

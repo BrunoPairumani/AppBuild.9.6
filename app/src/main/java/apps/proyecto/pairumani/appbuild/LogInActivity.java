@@ -1,6 +1,7 @@
 package apps.proyecto.pairumani.appbuild;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -68,6 +69,7 @@ public int x;
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(this);
         setContentView(R.layout.activity_log_in);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 // iNICIA LOS 2 METODOS DE ACUERDO A LA SOLICITUD DEL USUARIO
         InicioGoogle();
         InicioFacebook();

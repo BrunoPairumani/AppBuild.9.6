@@ -45,11 +45,12 @@
 
 
         <Button
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
 
             android:layout_height="50dp"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp"
+
+            android:layout_centerHorizontal="true"
 
             android:layout_marginTop="100dp"
             android:background="@android:color/holo_orange_light"
@@ -59,103 +60,65 @@
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-
+            android:layout_alignParentTop="true"
+       android:layout_alignParentStart="true"
             android:layout_marginTop="100dp"
+            android:onClick="mampDialog"
             android:backgroundTint="@color/black"
             android:background="@drawable/mampicono"
             />
-        <RelativeLayout
-            android:layout_marginTop="100dp"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="310dp"
-            android:background="@color/black">
 
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:onClick="mampDialog"
-
-                android:background="@drawable/informac"
-                />
-        </RelativeLayout>
         <Button
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
 
             android:layout_height="50dp"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp"
+
+            android:layout_centerHorizontal="true"
 
             android:layout_marginTop="180dp"
             android:background="@android:color/holo_orange_light"
-            android:gravity="center"
+
             android:text="Losa"
             android:onClick="Losa"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
 
+         android:layout_alignParentStart="true"
+            android:onClick="losahDialog"
             android:layout_marginTop="180dp"
             android:backgroundTint="@color/black"
             android:background="@drawable/losaicono"
             />
-        <RelativeLayout
-            android:layout_marginTop="180dp"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="310dp"
-            android:background="@color/black">
 
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:onClick="losahDialog"
-
-                android:background="@drawable/informac"
-                />
-        </RelativeLayout>
 
         <Button
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
 
             android:layout_height="50dp"
+
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp"
+
+            android:layout_centerHorizontal="true"
 
             android:layout_marginTop="260dp"
             android:background="@android:color/holo_orange_light"
-            android:gravity="center"
+
             android:text="Radier"
             android:onClick="Radier"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:onClick="radierHDialog"
+            android:layout_alignParentStart="true"
 
             android:layout_marginTop="260dp"
             android:backgroundTint="@color/black"
             android:background="@drawable/radiericono"
             />
-        <RelativeLayout
-            android:layout_marginTop="260dp"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="310dp"
-            android:background="@color/black">
-
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:onClick="radierHDialog"
-
-                android:background="@drawable/informac"
-                />
-        </RelativeLayout>
 
 
     </RelativeLayout>

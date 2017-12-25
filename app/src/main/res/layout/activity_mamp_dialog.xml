@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="310dp"
+
     tools:context="apps.proyecto.pairumani.appbuild.Dialog.MampDialog">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -36,19 +37,21 @@
             android:layout_width="250dp"
             android:layout_height="200dp"
             android:layout_marginTop="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
 
-            android:gravity="center"
-            android:layout_marginLeft="17dp"
             android:background="@color/white"
             >
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="250dp"
                 android:layout_height="400dp"
-                android:layout_alignParentStart="true"
+
                 android:layout_marginTop="0dp"
-                android:layout_alignParentTop="true"
-                android:foregroundGravity="center"
+
+                android:gravity="center"
+
+
                 android:alpha="0.7"
                 android:src="@drawable/mamposteria" />
             <TextView

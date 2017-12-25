@@ -208,6 +208,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
         myDialog7.show(manager7, "MampDialog");
     }
+
     public void losahDialog(View view) {
         FragmentManager manager8 = getFragmentManager();
         LosaHDialog myDialog8 = new LosaHDialog();
