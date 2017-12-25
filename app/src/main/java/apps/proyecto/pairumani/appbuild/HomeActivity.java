@@ -10,6 +10,7 @@ import apps.proyecto.pairumani.appbuild.Dialog.LosaHDialog;
 import apps.proyecto.pairumani.appbuild.Dialog.MampDialog;
 import apps.proyecto.pairumani.appbuild.Dialog.RadierDialog;
 import apps.proyecto.pairumani.appbuild.Dialog.RadierHDialog;
+import apps.proyecto.pairumani.appbuild.Dialog.RepelloDialog;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -53,18 +54,14 @@ public class HomeActivity extends AppCompatActivity {
 
     public void Enviar_Cotizacion(View view) {
 
-
-
-
     }
 
     public void mampDialog(View view) {
 
-        FragmentManager manager7 = getFragmentManager();
-        MampDialog myDialog7 = new MampDialog();
+        FragmentManager manager4 = getFragmentManager();
+        RepelloDialog myDialog4 = new RepelloDialog();
 
-        myDialog7.show(manager7, "MampDialog");
-
+        myDialog4.show(manager4, "RepelloDialog");
     }
 
     public void losahDialog(View view) {
