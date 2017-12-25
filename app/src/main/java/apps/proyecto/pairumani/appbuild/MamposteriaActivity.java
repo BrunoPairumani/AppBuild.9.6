@@ -15,6 +15,10 @@ import android.widget.Toast;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 
+import apps.proyecto.pairumani.appbuild.Dialog.EspesorDialog;
+import apps.proyecto.pairumani.appbuild.Dialog.ProporcionDialog;
+import apps.proyecto.pairumani.appbuild.Dialog.RepelloDialog;
+
 public class MamposteriaActivity extends AppCompatActivity {
     public double h, l, e, s ;
     public double CantidadL, CantidadLt, area, CareaL;
@@ -106,9 +110,9 @@ public class MamposteriaActivity extends AppCompatActivity {
 
 
                         if (rbtizon1.isChecked()) {
-                            h = 0.07;
-                            l = 0.12;
-                            e = 0.22;
+                            h = 0.071;
+                            l = 0.29;
+                            e = 0.14;
 
 
                             if (rbespesor11.isChecked()) {
@@ -239,9 +243,9 @@ public class MamposteriaActivity extends AppCompatActivity {
 
                         } else {
                             if (rbsoga1.isChecked()) {
-                                h = 0.07;
-                                e = 0.12;
-                                l = 0.22;
+                                h = 0.05;
+                                e = 0.14;
+                                l = 0.285;
 
 
                                 if (rbespesor11.isChecked()) {
@@ -369,9 +373,9 @@ public class MamposteriaActivity extends AppCompatActivity {
                             } else {
 
 
-                                h = 0.12;
-                                e = 0.07;
-                                l = 0.22;
+                                h = 0.055;
+                                e = 0.071;
+                                l = 0.24;
 
 
                                 if (rbespesor11.isChecked()) {
@@ -576,6 +580,32 @@ public class MamposteriaActivity extends AppCompatActivity {
         LadrilloDialog myDialog = new LadrilloDialog();
 
         myDialog.show(manager, "LadrilloDialog");
+
+    }
+
+    public void espesorDialog(View v) {
+
+        FragmentManager manager2 = getFragmentManager();
+        EspesorDialog myDialog2 = new EspesorDialog();
+
+        myDialog2.show(manager2, "EspesorDialog");
+
+    }
+
+
+    public void proporcionDialog(View v) {
+
+        FragmentManager manager3 = getFragmentManager();
+        ProporcionDialog myDialog3 = new ProporcionDialog();
+
+        myDialog3.show(manager3, "PropocionDialog");
+
+    }public void repelloDialog(View v) {
+
+        FragmentManager manager4 = getFragmentManager();
+        RepelloDialog myDialog4 = new RepelloDialog();
+
+        myDialog4.show(manager4, "RepelloDialog");
 
     }
 

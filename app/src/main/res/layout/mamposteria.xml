@@ -61,14 +61,14 @@
              android:gravity="center"
 
             android:textColor="@color/white"
-            android:text="Proporción del mortero"
+            android:text="Proporción del Mortero"
 
             android:textSize="17dp"/>
             <Button
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-
+android:onClick="proporcionDialog"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/informac" />
 
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="120dp"
             android:textColor="@color/white"
-            android:text="Altura (mts)"
+            android:text="Altura (mts.)"
             android:layout_marginLeft="20dp"
             android:textAlignment="center"
             android:textSize="18dp"/>
@@ -149,7 +149,7 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-
+android:onClick="espesorDialog"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/informac" />
         </RelativeLayout>
@@ -159,8 +159,10 @@
             android:layout_marginLeft="220dp"
             android:layout_marginTop="120dp"
             android:textColor="@color/white"
-            android:text="Longitud (mts)"
+            android:text="Longitud (mts.)"
             android:textSize="18dp"
+
+
             android:textAlignment="center" />
 
         <EditText
@@ -201,7 +203,7 @@
 
                     android:checked="true"
                     android:gravity="center"
-                    android:text="Muro en Tizón: 7*12*22 (cm)"
+                    android:text="Cóndor: 29*14*7.1 (cm.)"
                     android:textColor="@color/white"
                     android:textSize="18dp"
                     android:theme="@style/RadioButtonStyle">
@@ -216,7 +218,7 @@
     android:layout_margin="10dp"
                     android:inputType="textNoSuggestions"
                     android:gravity="center"
-                    android:text="Muro en Soga: 7*22*12 (cm)"
+                    android:text="Fiscal: 28.5*14*5 (cm.)"
                     android:textColor="@color/white"
                     android:textSize="18dp"
                     android:theme="@style/RadioButtonStyle">
@@ -231,7 +233,7 @@
 android:layout_marginTop="10dp"
                     android:inputType="textNoSuggestions"
                     android:gravity="center"
-                    android:text="Muro en Papelillo: 12*22*7 (cm)"
+                    android:text="Princesa: 24*7.1*5.5 (cm.)"
                     android:textColor="@color/white"
                     android:textSize="18dp"
 
@@ -349,7 +351,7 @@ android:layout_marginTop="10dp"
             android:layout_height="50dp"
             android:layout_marginTop="650dp"
             android:textColor="@color/white"
-            android:text="Tipo de Ladrillo:"
+
             android:textAlignment="center"
             android:textSize="17dp"
             android:background="@drawable/com_facebook_tooltip_black_background">
@@ -359,14 +361,14 @@ android:layout_marginTop="10dp"
             android:gravity="center"
 
             android:textColor="@color/white"
-            android:text="Proporción del repello"
+            android:text="Proporción del Repello"
             android:textAlignment="center"
             android:textSize="17dp"/>
             <Button
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-
+android:onClick="repelloDialog"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/informac" />
 

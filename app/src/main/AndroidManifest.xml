@@ -49,7 +49,10 @@
         <activity android:name=".ResultadoRadierActivity" />
         <activity android:name=".CotizarActivity" />
         <activity android:name=".Correo" />
-        <activity android:name=".LadrilloDialog"></activity>
+        <activity android:name=".LadrilloDialog" />
+        <activity android:name=".Dialog.EspesorDialog" />
+        <activity android:name=".Dialog.ProporcionDialog" />
+        <activity android:name=".Dialog.RepelloDialog"></activity>
     </application>
 
 </manifest>
