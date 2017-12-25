@@ -1,5 +1,6 @@
 package apps.proyecto.pairumani.appbuild;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,9 @@ import android.widget.Toast;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+
+import apps.proyecto.pairumani.appbuild.Dialog.LosaDialog;
+import apps.proyecto.pairumani.appbuild.Dialog.RadierDialog;
 
 public class RadierActivity extends AppCompatActivity {
     public double area,
@@ -171,5 +175,11 @@ catch (Exception e){
     }
 
 
+    public void radierDialog(View view) {
 
+        FragmentManager manager6 = getFragmentManager();
+        RadierDialog myDialog6 = new RadierDialog();
+
+        myDialog6.show(manager6, "RadierDialog");
+    }
 }

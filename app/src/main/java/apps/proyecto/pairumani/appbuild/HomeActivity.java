@@ -1,9 +1,15 @@
 package apps.proyecto.pairumani.appbuild;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import apps.proyecto.pairumani.appbuild.Dialog.LosaHDialog;
+import apps.proyecto.pairumani.appbuild.Dialog.MampDialog;
+import apps.proyecto.pairumani.appbuild.Dialog.RadierDialog;
+import apps.proyecto.pairumani.appbuild.Dialog.RadierHDialog;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -50,5 +56,28 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public void mampDialog(View view) {
+
+        FragmentManager manager7 = getFragmentManager();
+        MampDialog myDialog7 = new MampDialog();
+
+        myDialog7.show(manager7, "MampDialog");
+
+    }
+
+    public void losahDialog(View view) {
+        FragmentManager manager8 = getFragmentManager();
+        LosaHDialog myDialog8 = new LosaHDialog();
+
+        myDialog8.show(manager8, "LosaHDialog");
+    }
+
+    public void radierHDialog(View view) {
+        FragmentManager manager9 = getFragmentManager();
+        RadierHDialog myDialog9 = new RadierHDialog();
+
+        myDialog9.show(manager9, "RadierHDialog");
     }
 }

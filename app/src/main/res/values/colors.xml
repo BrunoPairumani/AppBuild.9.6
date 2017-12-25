@@ -6,6 +6,7 @@
     <color name="white" >#ffffff</color>
     <color name="xceleste">#CEE3F6</color>
     <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
 
     <color name="plomo">#A8A8A8 </color>
 </resources>

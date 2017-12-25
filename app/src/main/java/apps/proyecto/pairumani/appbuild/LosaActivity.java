@@ -1,5 +1,6 @@
 package apps.proyecto.pairumani.appbuild;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,9 @@ import android.widget.Toast;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+
+import apps.proyecto.pairumani.appbuild.Dialog.LosaDialog;
+import apps.proyecto.pairumani.appbuild.Dialog.RepelloDialog;
 
 public class LosaActivity extends AppCompatActivity {
 
@@ -175,6 +179,15 @@ catch (Exception e){
     startActivity(intent);
 }
 
+
+    }
+
+    public void losaDialog(View view) {
+
+        FragmentManager manager5 = getFragmentManager();
+        LosaDialog myDialog5 = new LosaDialog();
+
+        myDialog5.show(manager5, "LosaDialog");
 
     }
 }

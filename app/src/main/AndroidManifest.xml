@@ -52,7 +52,12 @@
         <activity android:name=".LadrilloDialog" />
         <activity android:name=".Dialog.EspesorDialog" />
         <activity android:name=".Dialog.ProporcionDialog" />
-        <activity android:name=".Dialog.RepelloDialog"></activity>
+        <activity android:name=".Dialog.RepelloDialog" />
+        <activity android:name=".Dialog.LosaDialog" />
+        <activity android:name=".Dialog.RadierDialog" />
+        <activity android:name=".Dialog.MampDialog" />
+        <activity android:name=".Dialog.LosaHDialog" />
+        <activity android:name=".Dialog.RadierHDialog"></activity>
     </application>
 
 </manifest>
