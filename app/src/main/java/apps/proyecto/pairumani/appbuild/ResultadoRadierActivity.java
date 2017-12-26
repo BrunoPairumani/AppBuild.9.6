@@ -52,7 +52,7 @@ public class ResultadoRadierActivity extends AppCompatActivity implements View.O
 
         correo = (EditText) findViewById(R.id.et_to); // DESTINATARIO DEL CORREO
        // msg = (TableLayout) findViewById(R.id.Tbinfo);
-        sub = "Cotizacón";  // ASUNTO DEL CORREO
+        sub = "Cotización";  // ASUNTO DEL CORREO
       //  msg = "Radier" ; // Mensaje del Correo
 
         //  login.setOnClickListener(this);

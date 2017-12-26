@@ -1,7 +1,11 @@
 package apps.proyecto.pairumani.appbuild;
 
 import android.app.FragmentManager;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,8 +29,13 @@ public class MamposteriaActivity extends AppCompatActivity {
     public double Cmortero, CmorteroTd, TotalMortero;  // CANTIDAD DE MORTERO
     public double Cemento, CementoTd, TotalCemento, Totalpc, Totalpf, Totalbolsa, Totalbolsap;  // CEMENTO
     public double AgrFino, AgrFinoTd, TotalAgrFino;
-    public double pcemento, pfino;
-    public double Pcemento, Parena, Pcemento2, Parena2, Pladrillo, Ptotal;
+    public double pcemento, pfino, agua;
+    public double Pcemento, Parena, Pcemento2, Parena2, Pladrillo, Ptotal,Pcladrillo;
+    public double PcAgua, PltArena, aguaTd, Totalagua, PltsArena;
+
+    public String lx1;
+    String url = "";
+    String parametros = "";
 
     EditText Maltura1, Manchura1, Mlargo1;
     Button Calcular1;
@@ -113,7 +122,7 @@ public class MamposteriaActivity extends AppCompatActivity {
                             h = 0.071;
                             l = 0.29;
                             e = 0.14;
-
+                            Pcladrillo = 490;
 
                             if (rbespesor11.isChecked()) {
                                 s = 0.01;
@@ -154,6 +163,7 @@ public class MamposteriaActivity extends AppCompatActivity {
                                 Totalpc = area * pcemento;  // Prepello
                                 Totalpf = area * pfino;
 
+                            //    Conectarbd();
 
                             } else {
                                 if (rbespesor21.isChecked()) {
@@ -246,7 +256,7 @@ public class MamposteriaActivity extends AppCompatActivity {
                                 h = 0.05;
                                 e = 0.14;
                                 l = 0.285;
-
+Pcladrillo=140;
 
                                 if (rbespesor11.isChecked()) {
                                     CantidadL = 1 / ((l + s) * (h + s));  // metro cuadrado cantidad de ladrillos
@@ -376,6 +386,7 @@ public class MamposteriaActivity extends AppCompatActivity {
                                 h = 0.055;
                                 e = 0.071;
                                 l = 0.24;
+                                Pcladrillo=145;
 
 
                                 if (rbespesor11.isChecked()) {
@@ -504,21 +515,36 @@ public class MamposteriaActivity extends AppCompatActivity {
                             }
                         }
                         try {
+
+                            agua = 147 * area;
+                            aguaTd = agua + (agua * (v4 / 100));
+                            Totalagua = aguaTd / 1000;
                             Totalbolsa = TotalCemento / 42.5;
                             Totalbolsap = Totalpc / 42.5;
 
                             // PRECIOS DE MATERIALES
-                            Pcemento = (7500 * Totalbolsa);
+                              Pcemento = (7500 * Totalbolsa);
+
+                           // Pcemento = (c1 * Totalbolsa);
                             Pcemento2 = 7500 * Totalbolsap;
-                            Pladrillo = 490 * CareaL;
+
+
+                            //Pladrillo = 490 * CareaL;
+                           Pladrillo = Pcladrillo * CareaL;
                             Parena = 48450 * TotalAgrFino;
                             Parena2 = 48450 * Totalpf;
+
+
+                            PcAgua = 3042 * Totalagua;
 
 
                             // TOTAL
 
                             Ptotal = Pcemento + Pcemento2 + Pladrillo + Parena + Parena2;
 
+                            PltArena = TotalAgrFino * 1000;
+
+                            PltsArena= Totalpf *1000;
                         } catch (Exception e) {
                             Toast.makeText(getApplicationContext(), "Parámetros Inválidos, Ingresar Números", Toast.LENGTH_SHORT).show();
                         }
@@ -548,6 +574,12 @@ public class MamposteriaActivity extends AppCompatActivity {
                         i.putExtra("dato13", formateador.format(Parena2));
                         i.putExtra("dato14", formateador.format(Pladrillo));
                         i.putExtra("dato15", formateador.format(Ptotal));
+                        i.putExtra("dato16", formateador.format(PltArena));
+
+                        i.putExtra("dato17", formateador2.format(aguaTd));
+                        i.putExtra("dato18", formateador2.format(Totalagua));
+                        i.putExtra("dato19", formateador.format(PcAgua));
+                        i.putExtra("dato20", formateador.format(PltsArena));
                         startActivity(i);
 
                     }
@@ -566,13 +598,85 @@ public class MamposteriaActivity extends AppCompatActivity {
             startActivity(intent);
         }
         }
+/*
+    private void Conectarbd() {
+        ConnectivityManager connMgr = (ConnectivityManager)
+                getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+
+        if (networkInfo != null && networkInfo.isConnected()) {
+
+
+            String nombre = "Condor";
+
+
+
+            if (nombre.isEmpty() ) {
+                Toast.makeText(getApplicationContext(), "Ningun campo puede estar vacio", Toast.LENGTH_LONG).show();
+            }
+            else
+            {
+                 url = "http://www.nexotec.cl/buildu/buscacondor.php";
+                // url = "http://192.168.1.34/logar.php";
+                parametros = "nombre=" + nombre ;
+                Toast.makeText(getApplicationContext(), parametros, Toast.LENGTH_LONG).show();
+                //"rut=" + rut +
+                new SolicitaDatos().execute(url);
+            }
+        }
+        else
+        {
+            Toast.makeText(getApplicationContext(), "Ninguna conexion detectada", Toast.LENGTH_LONG).show();
+        }
+
+
+    }
+
+
+
+    private class SolicitaDatos extends AsyncTask<String, Void, String> {
+        @Override
+        protected String doInBackground(String... urls) {
+
+            return conn.postDatos(urls[0], parametros);
+            // return conn.postDatos(url, parametros);
+
+        }
+
+        @Override
+        protected void onPostExecute(String resultado) {
+            Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
+            if (resultado.contains("ok,")) {
+
+                String[] datos  = resultado.split(",");
+
+                Toast.makeText(getApplicationContext(), datos[1].toString() , Toast.LENGTH_LONG).show();
+
+
+                l1 = Double.parseDouble(datos[1]);
 
 
 
 
 
+              //datos2= datos[1].toString();
+                //l1 = getIntent().getExtras().getDouble("precio");
 
-        //DIALOG MENSAJES
+
+             //   l1 = getIntent().getExtras().getDouble("precio");
+
+
+            } else {
+                Toast.makeText(getApplicationContext(), " Usuario / pass Incorrectos ", Toast.LENGTH_LONG).show();
+
+            }
+        }
+
+
+
+
+    }
+*/    //DIALOG MENSAJES
 
     public void showDialog(View v) {
 
@@ -600,7 +704,9 @@ public class MamposteriaActivity extends AppCompatActivity {
 
         myDialog3.show(manager3, "PropocionDialog");
 
-    }public void repelloDialog(View v) {
+    }
+
+    public void repelloDialog(View v) {
 
         FragmentManager manager4 = getFragmentManager();
         RepelloDialog myDialog4 = new RepelloDialog();
@@ -610,3 +716,5 @@ public class MamposteriaActivity extends AppCompatActivity {
     }
 
 }
+
+

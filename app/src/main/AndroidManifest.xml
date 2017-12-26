@@ -57,7 +57,8 @@
         <activity android:name=".Dialog.RadierDialog" />
         <activity android:name=".Dialog.MampDialog" />
         <activity android:name=".Dialog.LosaHDialog" />
-        <activity android:name=".Dialog.RadierHDialog"></activity>
+        <activity android:name=".Dialog.RadierHDialog" />
+        <activity android:name=".Dialog.SobreDialog"></activity>
     </application>
 
 </manifest>

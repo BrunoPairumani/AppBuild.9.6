@@ -119,7 +119,7 @@
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="@color/black"
-            android:text="Princesa  Precio: $ 140"
+            android:text="Princesa  Precio: $ 145"
             android:textAlignment="center"
             android:textSize="17dp"/>
 

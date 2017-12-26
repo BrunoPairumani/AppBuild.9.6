@@ -246,7 +246,7 @@
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="left"
-        android:text="Mortero"
+        android:text="Agua"
         android:textColor="@color/black"
         />
 
@@ -269,6 +269,16 @@
         android:textColor="@color/black"
 
   />
+        <TextView
+            android:id="@+id/PcAgua"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:gravity="right"
+            android:text="Precio"
+            android:textColor="@color/black"
+
+            />
 
 
     </TableRow>
@@ -337,7 +347,7 @@
         android:layout_height="fill_parent"
         android:padding="10dp"
         android:gravity="center"
-        android:text="Muro a Repellar"
+        android:text="Muro a Estucar"
         android:layout_span="4"
         android:textColor="@color/black"
 
@@ -513,6 +523,24 @@
         android:gravity="center"
         android:textSize="16dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        android:text="Mortero:"
+        android:textColor="@color/black"
+        android:textSize="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:id="@+id/tvDatos2"
+        android:text="ddd"
+        android:textColor="@color/black"
+        android:textSize="16dp"/>
       <Button
         android:layout_width="350dp"
 

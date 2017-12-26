@@ -1,5 +1,6 @@
 package apps.proyecto.pairumani.appbuild;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.annotation.NonNull;
@@ -36,6 +37,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
 import java.util.Arrays;
+
+import apps.proyecto.pairumani.appbuild.Dialog.RadierDialog;
+import apps.proyecto.pairumani.appbuild.Dialog.SobreDialog;
 
 
 public class LogInActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
@@ -294,7 +298,13 @@ public int x;
         startActivity(intent);
     }
 
+    public void Aboutis(View view) {
 
+        FragmentManager manager11 = getFragmentManager();
+        SobreDialog myDialog11 = new SobreDialog();
+
+        myDialog11.show(manager11, "SobreDialog");
+    }
 
 
 

@@ -361,14 +361,14 @@ android:layout_marginTop="10dp"
             android:gravity="center"
 
             android:textColor="@color/white"
-            android:text="Proporción del Repello"
+            android:text="Proporción del Estuco"
             android:textAlignment="center"
             android:textSize="17dp"/>
             <Button
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-android:onClick="repelloDialog"
+                android:onClick="repelloDialog"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/informac" />
 

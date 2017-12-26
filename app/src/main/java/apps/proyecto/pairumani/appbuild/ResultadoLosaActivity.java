@@ -53,7 +53,7 @@ public class ResultadoLosaActivity extends AppCompatActivity implements View.OnC
         //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         correo = (EditText) findViewById(R.id.et_to);
-        sub = "Cotizacón";  // ASUNTO DEL CORREO
+        sub = "Cotización";  // ASUNTO DEL CORREO
       //  msg = "LOSA" ; // Mensaje del Correo
 
         //  login.setOnClickListener(this);
@@ -74,7 +74,7 @@ public class ResultadoLosaActivity extends AppCompatActivity implements View.OnC
     private void recibirDatos() {
         Bundle extras = getIntent().getExtras();
 
-
+// CARGA LOS DATOS
         String d1 = extras.getString("dato01");
         String d2 = extras.getString("dato02");
         String d3 = extras.getString("dato03");

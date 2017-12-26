@@ -44,13 +44,13 @@ public class ResultadosActivity extends AppCompatActivity implements View.OnClic
 
 
 
-    TextView tvDatos;
+    TextView tvDatos, tvDatos2;
     TextView tvMLadrillo, tvCLadrillo;
     TextView tvMCemento, tvCCemento;
     TextView tvMmortero, tvCmortero;
     TextView tvMfino, tvCfino;
     TextView tvMppc, tvCppc;
-    TextView tvMppf, tvCppf;
+    TextView tvMppf, tvCppf, PcAgua;
     TextView Pcemento, Pladrillo, Parena, Pcemento2, Parena2, Ptotal;
     Button btn_correo, login;
     EditText correo;
@@ -61,7 +61,7 @@ public class ResultadosActivity extends AppCompatActivity implements View.OnClic
        // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         correo = (EditText) findViewById(R.id.et_to); // DESTINATARIO DEL CORREO
-        sub = "Cotizacón";  // ASUNTO DEL CORREO
+        sub = "Cotización";  // ASUNTO DEL CORREO
 
 
         context = this;
@@ -96,7 +96,11 @@ public class ResultadosActivity extends AppCompatActivity implements View.OnClic
         String d13 = extras.getString("dato13");
         String d14 = extras.getString("dato14");
         String d15 = extras.getString("dato15");
-
+        String d16 = extras.getString("dato16");
+        String d17 = extras.getString("dato17");
+        String d18 = extras.getString("dato18");
+        String d19 = extras.getString("dato19");
+        String d20 = extras.getString("dato20");
 // CARGAR ARCHIVO HTML
 
         html = "<!DOCTYPE html>" +
@@ -142,15 +146,15 @@ public class ResultadosActivity extends AppCompatActivity implements View.OnClic
                 "</tr>"+
 
                 "<tr role='row'>" +
-                "<td> Mortero </td>"+
-                "<td align=\"right\">" + d5 +" (m³/m²)</td>"+
-                "<td align=\"right\">" + d5 +" (m³/m²)</td>"+
-                "<td> </td>"+
+                "<td> Agua </td>"+
+                "<td align=\"right\">" + d17 +" (Lts.)</td>"+
+                "<td align=\"right\">" + d18 +" (m³.)</td>"+
+                "<td align=\"right\"> $ " + d19 +"</td>"+
                 "</tr>"+
 
                 "<tr role='row'>" +
                 "<td> Arena </td>"+
-                "<td align=\"right\">" + d6 +" (m³)</td>"+
+                "<td align=\"right\">" + d16 +" (Lts.)</td>"+
                 "<td align=\"right\">" + d6 +" (m³)</td>"+
                 "<td align=\"right\"> $ " + d12 +"</td>"+
                 "</tr>"+
@@ -162,15 +166,15 @@ public class ResultadosActivity extends AppCompatActivity implements View.OnClic
 
                 "<tr role='row'>" +
                 "<td> Cemento </td>"+
-                "<td align=\"right\">" + d9 +" (kg.)</td>"+
-                "<td align=\"right\">" + d9 +" (Bolsas.)</td>"+
+                "<td align=\"right\">" + d7 +" (kg.)</td>"+
+                "<td align=\"right\">" + d8 +" (Bolsas.)</td>"+
                 "<td align=\"right\"> $ " + d11 +"</td>"+
                 "</tr>"+
 
                 "<tr role='row'>" +
                 "<td> Arena </td>"+
-                "<td align=\"right\">" + d6 +" (m³)</td>"+
-                "<td align=\"right\">" + d6 +" (m³)</td>"+
+                "<td align=\"right\">" + d20 +" (Lts.)</td>"+
+                "<td align=\"right\">" + d9 +" (m³.)</td>"+
                 "<td align=\"right\"> $ " + d13 +"</td>"+
                 "</tr>"+
 
@@ -221,6 +225,7 @@ public class ResultadosActivity extends AppCompatActivity implements View.OnClic
 
 
         tvDatos = (TextView) findViewById(R.id.tvDatos);
+        tvDatos2 = (TextView) findViewById(R.id.tvDatos2);
         tvCLadrillo = (TextView) findViewById(R.id.tvCLadrillo);
         tvMLadrillo = (TextView) findViewById(R.id.tvMLadrillo);
 
@@ -228,32 +233,33 @@ public class ResultadosActivity extends AppCompatActivity implements View.OnClic
         tvMLadrillo.setText(d2 + " (Un.)");
 
         tvMCemento = (TextView) findViewById(R.id.tvMCemento);
-        tvMCemento.setText(d4+" (Bolsas.)");
+        tvMCemento.setText(d4+" (Bolsas)");
 
         tvCCemento = (TextView) findViewById(R.id.tvCCemento);
         tvCCemento.setText(d3+" (Kg.)");
 
         tvMfino = (TextView) findViewById(R.id.tvMfino);
         tvCfino = (TextView) findViewById(R.id.tvCfino);
-        tvMfino.setText(d6+" (m³)");
-        tvCfino.setText(d6+" (m³)");
+        tvMfino.setText(d16+" (Lts.)");
+        tvCfino.setText(d6+" (m³.)");
 
         tvMmortero = (TextView) findViewById(R.id.tvMmortero);
         tvCmortero = (TextView) findViewById(R.id.tvCmortero);
-        tvCmortero.setText(d5+" (m³/m²)");
-        tvMmortero.setText(d5+" (m³/m²)");
+        tvCmortero.setText(d18+" (m³.)");
+        tvMmortero.setText(d17+" (Lts.)");
 
         tvMppc = (TextView) findViewById(R.id.tvMppc);
         tvCppc = (TextView) findViewById(R.id.tvCppc);
         tvMppc.setText(d7+" (Kg.)");
-        tvCppc.setText(d8+ " (Bolsas.)");
+        tvCppc.setText(d8+ " (Bolsas)");
 
         tvMppf = (TextView) findViewById(R.id.tvMppf);
         tvCppf = (TextView) findViewById(R.id.tvCppf);
-        tvCppf.setText(d9+" (m³)");
-        tvMppf.setText(d9+" (m³)");
+        tvCppf.setText(d9+" (m³.)");
+        tvMppf.setText(d20+" (Lts.)");
 
-        tvDatos.setText(d1+ " metros cuadrados (m²)");
+        tvDatos2.setText(d5 +"(m³/m².)");
+        tvDatos.setText(d1+ " metros cuadrados (m².)");
 
         Pcemento = (TextView) findViewById(R.id.Pcemento);
         Pcemento.setText("$ " + d10 );
@@ -261,6 +267,9 @@ public class ResultadosActivity extends AppCompatActivity implements View.OnClic
         Pcemento2 = (TextView) findViewById(R.id.Pcemento2);
         Pcemento2.setText("$ " + d11 );
 
+
+        PcAgua= (TextView) findViewById(R.id.PcAgua);
+        PcAgua.setText("$ "+ d19);
 
         Parena = (TextView) findViewById(R.id.Parena);
         Parena.setText("$ " + d12 );
@@ -273,6 +282,8 @@ public class ResultadosActivity extends AppCompatActivity implements View.OnClic
 
         Ptotal = (TextView) findViewById(R.id.TxtPtotal);
         Ptotal.setText("$ " + d15);
+
+
 
 
 

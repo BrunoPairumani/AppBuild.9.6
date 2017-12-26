@@ -30,6 +30,7 @@ import apps.proyecto.pairumani.appbuild.Dialog.LosaHDialog;
 import apps.proyecto.pairumani.appbuild.Dialog.MampDialog;
 import apps.proyecto.pairumani.appbuild.Dialog.RadierHDialog;
 import apps.proyecto.pairumani.appbuild.Dialog.RepelloDialog;
+import apps.proyecto.pairumani.appbuild.Dialog.SobreDialog;
 
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
     private ImageView photoImageView;
@@ -222,5 +223,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
         myDialog9.show(manager9, "RadierHDialog");
     }
+    public void Aboutis(View view) {
 
+        FragmentManager manager11 = getFragmentManager();
+        SobreDialog myDialog11 = new SobreDialog();
+
+        myDialog11.show(manager11, "SobreDialog");
+    }
 }
